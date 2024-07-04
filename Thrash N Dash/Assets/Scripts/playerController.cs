@@ -26,24 +26,28 @@ public class playerController : MonoBehaviour
 
     }
 
-    // Update is called once per frame
+    // Update is called once per frame, food for game logic that isnt tied to physics
     void Update(){
+
+        grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckerRadius, groundLayer);
         if(grounded && Input.GetAxis("Jump")>0){
             myAnim.SetBool("isGrounded", grounded);
             myRB.AddForce(new Vector2(0, jumpHeight));
         }
     }
+    //called consistently for things that involve physiscs, movement, interaction etc
     void FixedUpdate()
     {
-        //check if player is on the ground (otherwise the player is falling)
-        //if player is intersecting the ground "grounded" will be true, otherwise, false.
-        grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckerRadius, groundLayer);
+
+        //update animator controller parameters
         myAnim.SetBool("isGrounded", grounded);
         myAnim.SetFloat("VerticleSpeed", myRB.velocity.y);
 
+        //handle horizaontal movement
         float move = Input.GetAxis("Horizontal");
         myRB.velocity = new Vector2(move * maxSpeed, myRB.velocity.y);
 
+        //flip the character if he switches directions
         if(move>0 && !facingRight){
             Flip();
         } else if(move<0 && facingRight){

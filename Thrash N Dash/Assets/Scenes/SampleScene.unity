@@ -349,7 +349,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   groundCheck: {fileID: 590988390}
-  jumpHeight: 20
+  jumpHeight: 35
 --- !u!58 &193056040
 CircleCollider2D:
   m_ObjectHideFlags: 0

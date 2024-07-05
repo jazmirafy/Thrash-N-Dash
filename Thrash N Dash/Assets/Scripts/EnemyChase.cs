@@ -37,12 +37,14 @@ public class EnemyChase : MonoBehaviour
 
 
     }
+    //if the enemy's collider trigger gets trigged by an object with a game obstacle tag, jump over it
     void OnTriggerEnter2D(Collider2D collider){
         if(collider.tag == "Obstacle"){
         Debug.Log("Enemy triggered");
         rb.AddForce(Vector2.up * jumpHeight);
         }
     }
+    //check the current orientation of the play and multiply it by -1 to change it to the opposite direction
     void Flip(){
         facingRight = !facingRight;
         Vector3 theScale = transform.localScale;

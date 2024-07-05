@@ -26,17 +26,17 @@ public class playerController : MonoBehaviour
 
     }
 
-    // Update is called once per frame, food for game logic that isnt tied to physics
+    // Update is called once per frame, good for game logic that isnt tied to physics
     void Update(){
 
-        //checks if circle is overlapping another colliders, if its overlapping, the player is on the floor
+        //checks if the circle on the players feet is overlapping another collider (the platform collider), if its overlapping, that means the player is on the floor
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckerRadius, groundLayer);
         if(grounded && Input.GetAxis("Jump")>0){
             myAnim.SetBool("isGrounded", grounded);
             myRB.AddForce(new Vector2(0, jumpHeight));
         }
     }
-    //called consistently for things that involve physiscs, movement, interaction etc
+    //called consistently for things that involve rigidbody physics, movement, interaction etc
     void FixedUpdate()
     {
 

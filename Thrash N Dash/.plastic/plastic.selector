@@ -1,4 +1,0 @@
-repository "Thrash N Dash@jazmirafy@cloud"
-  path "/"
-    br "/main"
-    co "/main"

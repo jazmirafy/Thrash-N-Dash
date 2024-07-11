@@ -22,7 +22,7 @@ public class playerController : MonoBehaviour
     {
         myRB = GetComponent<Rigidbody2D>();
         myAnim = GetComponent<Animator>();
-        facingRight = true;
+        facingRight = true; //user starts off facing to the right
 
     }
 
@@ -31,6 +31,7 @@ public class playerController : MonoBehaviour
 
         //checks if the circle on the players feet is overlapping another collider (the platform collider), if its overlapping, that means the player is on the floor
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckerRadius, groundLayer);
+        //if the user is grounded, and the user press the jump button, make them jump the dedicated jump height
         if(grounded && Input.GetAxis("Jump")>0){
             myAnim.SetBool("isGrounded", grounded);
             myRB.AddForce(new Vector2(0, jumpHeight));
@@ -41,13 +42,16 @@ public class playerController : MonoBehaviour
     {
 
         //update animator controller parameters
-        myAnim.SetBool("isGrounded", grounded);
-        myAnim.SetFloat("VerticleSpeed", myRB.velocity.y);
+       // myAnim.SetBool("isGrounded", grounded);
+        //myAnim.SetFloat("VerticleSpeed", myRB.velocity.y);
 
         //handle horizaontal movement
 
         //this will return a value from -1 (negative means the player is moving left) to 1 (postitive means player is moving right) (0 means player isnt pressing a button to move)
         float moveDirection = Input.GetAxis("Horizontal"); 
+        //takes the absolute value of the moveDirection value, then assigns it to the speed parameter so the sprite can go from the idle to skating animation and vise versa
+        //we take the absolute value bc the speed parameter in the anim controller just needs to detect movement is happening, it doesnt need the direction though
+        myAnim.SetFloat("speed", Mathf.Abs(moveDirection));
         
         myRB.velocity = new Vector2(moveDirection * maxSpeed, myRB.velocity.y);
 
@@ -61,10 +65,10 @@ public class playerController : MonoBehaviour
     }
     //switches the bool value of whatever facing right currently is, looks are the orientation of the sprite, and then multiplying it by -1 is what flips the sprite the other way
     void Flip(){
-        facingRight = !facingRight;
-        Vector3 theScale = transform.localScale;
-        theScale.x *= -1;
-        transform.localScale = theScale;
+        facingRight = !facingRight; //switches whatever the current boolean value to the opposite (from false to true, or from true to false)
+        Vector3 theScale = transform.localScale; //gets the local scale the sprite has now, and assigns it to a variable
+        theScale.x *= -1; //multiplies the x value of the scale to -1 (flip the x coordinate because you want to flip it horizontally)
+        transform.localScale = theScale; // takes the value of theScale variable (the flipped variable) and assigns it to the sprites actual local scale
 
     }
 }

@@ -44,11 +44,12 @@ public class EnemyChase : MonoBehaviour
         rb.AddForce(Vector2.up * jumpHeight);
         }
     }
-    //check the current orientation of the play and multiply it by -1 to change it to the opposite direction
+  
+    //switches the bool value of whatever facing right currently is, looks are the orientation of the sprite, and then multiplying it by -1 is what flips the sprite the other way
     void Flip(){
-        facingRight = !facingRight;
-        Vector3 theScale = transform.localScale;
-        theScale.x *= -1;
-        transform.localScale = theScale;
+        facingRight = !facingRight; //switches whatever the current boolean value to the opposite (from false to true, or from true to false)
+        Vector3 theScale = transform.localScale; //gets the local scale the sprite has now, and assigns it to a variable
+        theScale.x *= -1; //multiplies the x value of the scale to -1 (flip the x coordinate because you want to flip it horizontally)
+        transform.localScale = theScale; // takes the value of theScale variable (the flipped variable) and assigns it to the sprites actual local scale
     }
 }

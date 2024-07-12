@@ -6,8 +6,8 @@ public class playerController : MonoBehaviour
 {
     //movement variables
     public float maxSpeed;
-    Rigidbody2D myRB;
-    Animator myAnim;
+    public Rigidbody2D myRB;
+    public Animator myAnim;
     bool facingRight;
 
     //jumping variables
@@ -23,6 +23,7 @@ public class playerController : MonoBehaviour
         myRB = GetComponent<Rigidbody2D>();
         myAnim = GetComponent<Animator>();
         facingRight = true; //user starts off facing to the right
+
 
     }
 
@@ -41,9 +42,9 @@ public class playerController : MonoBehaviour
     void FixedUpdate()
     {
 
-        //update animator controller parameters
-       // myAnim.SetBool("isGrounded", grounded);
-        //myAnim.SetFloat("VerticleSpeed", myRB.velocity.y);
+        //update animator controller parameters (for the jump animation)
+        myAnim.SetBool("isGrounded", grounded);
+        myAnim.SetFloat("VerticleSpeed", myRB.velocity.y);
 
         //handle horizaontal movement
 
@@ -52,7 +53,7 @@ public class playerController : MonoBehaviour
         //takes the absolute value of the moveDirection value, then assigns it to the speed parameter so the sprite can go from the idle to skating animation and vise versa
         //we take the absolute value bc the speed parameter in the anim controller just needs to detect movement is happening, it doesnt need the direction though
         myAnim.SetFloat("speed", Mathf.Abs(moveDirection));
-        
+        //this is what makes the player actually go forward. this takes the direction and speed and makes that the vector x value but keeps the y value the same
         myRB.velocity = new Vector2(moveDirection * maxSpeed, myRB.velocity.y);
 
         //flip the character sprite if he switches directions

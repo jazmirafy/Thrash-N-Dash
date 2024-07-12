@@ -37,7 +37,7 @@ public class SugarManager : MonoBehaviour
         }
 
     }
-    //ienumerator is exclusively used for coroutine
+    //ienumerator is exclusively used for a coroutine
     IEnumerator SugarRush(float currentRushTime){
         sugarRushActive = true;
 

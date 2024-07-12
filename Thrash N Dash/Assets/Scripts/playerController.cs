@@ -35,7 +35,8 @@ public class playerController : MonoBehaviour
         //if the user is grounded, and the user press the jump button, make them jump the dedicated jump height
         if(grounded && Input.GetAxis("Jump")>0){
             myAnim.SetBool("isGrounded", grounded);
-            myRB.AddForce(new Vector2(0, jumpHeight));
+            myRB.AddForce(Vector2.up * jumpHeight); //this way of making the player jump can be more memory and performance efficient because it doesnt have to create a new vector 2 instance for each jump
+            //myRB.AddForce(new Vector2(0, jumpHeight));
         }
     }
     //called consistently for things that involve rigidbody physics, movement, interaction etc
@@ -54,7 +55,9 @@ public class playerController : MonoBehaviour
         //we take the absolute value bc the speed parameter in the anim controller just needs to detect movement is happening, it doesnt need the direction though
         myAnim.SetFloat("speed", Mathf.Abs(moveDirection));
         //this is what makes the player actually go forward. this takes the direction and speed and makes that the vector x value but keeps the y value the same
-        myRB.velocity = new Vector2(moveDirection * maxSpeed, myRB.velocity.y);
+        myRB.velocity = new Vector2(moveDirection * maxSpeed, myRB.velocity.y); //player moves at speed immediately, more arcade like movement
+        //myRB.AddForce(new Vector2((moveDirection * maxSpeed),0));---this gives more realistic movement, player speed up slowly, accelerates
+
 
         //flip the character sprite if he switches directions
         if(moveDirection>0 && !facingRight){

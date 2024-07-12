@@ -22,7 +22,7 @@ public class EnemyChase : MonoBehaviour
     void Update()
     {
         //gets the distance between the AI enemy and the targeted player it wants to follow
-       distance = Vector2.Distance(transform.position, target.transform.position);
+       //distance = Vector2.Distance(transform.position, target.transform.position);
 
        //determines the distance and direction the enemy needs to move to reach the target. im using this to determine where the AIenemy is in relation to the target
         Vector2 direction = target.transform.position - transform.position;
@@ -41,7 +41,8 @@ public class EnemyChase : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collider){
         if(collider.tag == "Obstacle"){
         Debug.Log("Enemy triggered");
-        rb.AddForce(Vector2.up * jumpHeight);
+        //rb.AddForce(new Vector2(0, jumpHeight));
+        rb.AddForce(Vector2.up * jumpHeight); //this way of making the enemy jump can be more memory and performance efficient because it doesnt have to create a new vector 2 instance for each jump
         }
     }
   

@@ -154,6 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 961721313}
   maxHealth: 6
+  healthAmount: 0
   speedBar: {fileID: 235914187}
   rushTime: 6
   playerController: {fileID: 193056039}
@@ -1689,6 +1690,7 @@ MonoBehaviour:
   firstCheckPoint: {fileID: 765795694}
   player: {fileID: 193056034}
   enemy: {fileID: 187330274}
+  sugarManager: {fileID: 0}
 --- !u!1 &823491406
 GameObject:
   m_ObjectHideFlags: 0

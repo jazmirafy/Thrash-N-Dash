@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class SugarManager : MonoBehaviour
 {
     public Image healthBar;
-    public float maxHealth;
-    float healthAmount;
+    public float maxHealth = 6;
+    public float healthAmount;
     public Image speedBar;
     //rushTime is how long the sugar rush lasts
     public float rushTime;
@@ -43,8 +43,10 @@ public class SugarManager : MonoBehaviour
         sugarRushActive = true;
 
         //decrease player health and decrease the length of the green part of the health bar
-        healthAmount--;
+        healthAmount -= 2; // if the player eats sugar their health goes down by 2
         healthBar.fillAmount = healthAmount/ maxHealth;
+        //dont forget to implement a consequence for when the player's health goes to zero. 
+
         playerController.maxSpeed += 2;
 
         //double the speed bar's size since the player's speed doubled

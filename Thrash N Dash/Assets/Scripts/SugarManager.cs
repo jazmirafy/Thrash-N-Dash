@@ -34,6 +34,7 @@ public class SugarManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.W) && !sugarRushActive && rushTime>=1){
         //Coroutine = allow to delay/modify methods and events until a time or condition is met
         StartCoroutine(SugarRush(rushTime));
+        //add the code to increase the slider speed as a penalty for taking the sugar 
         }
 
     }

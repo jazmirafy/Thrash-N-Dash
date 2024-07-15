@@ -1298,8 +1298,10 @@ MonoBehaviour:
   checkPointPosition: {x: 0, y: 0}
   trickSlider: {fileID: 1500602059}
   buttonPressed: 0
-  sliderSpeed: 10
+  sliderSpeed: 1
   fillAmount: 1
+  sliderEnabled: 0
+  accurateStop: 0
 --- !u!212 &765795695
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1690,7 +1692,7 @@ MonoBehaviour:
   firstCheckPoint: {fileID: 765795694}
   player: {fileID: 193056034}
   enemy: {fileID: 187330274}
-  sugarManager: {fileID: 0}
+  sugarManager: {fileID: 11371175}
 --- !u!1 &823491406
 GameObject:
   m_ObjectHideFlags: 0

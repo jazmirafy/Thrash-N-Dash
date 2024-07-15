@@ -33,7 +33,7 @@ public class EnemyChase : MonoBehaviour
             Flip();
         }
         //gets the AI enemy to move towards the targets postion at a particular speed. (the Time.deltaTime portion is there to make sure the speed is consistent at any framerate/ speed isnt framerate dependent. generally needed in the update method but not fixed update)
-        transform.position = Vector2.MoveTowards(transform.position, target.transform.position, AIspeed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, target.transform.position, AIspeed * Time.deltaTime); //the value of Time.deltaTime is updated one per frame
 
 
     }

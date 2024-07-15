@@ -1297,8 +1297,8 @@ MonoBehaviour:
   checkPointPosition: {x: 0, y: 0}
   trickSlider: {fileID: 1500602059}
   buttonPressed: 0
-  sliderSpeed: 0
-  fillAmount: 0
+  sliderSpeed: 10
+  fillAmount: 1
 --- !u!212 &765795695
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2685,7 +2685,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.586
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []

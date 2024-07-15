@@ -10,6 +10,7 @@ public class SecondCheckPoint : MonoBehaviour
     public FirstCheckPoint firstCheckPoint;
     public GameObject player;
     public GameObject enemy;
+    public SugarManager sugarManager;
 
     void OnTriggerEnter2D(Collider2D collider){
         //check if the collider was triggered by the player
@@ -33,7 +34,11 @@ public class SecondCheckPoint : MonoBehaviour
                 //respawn the enemy a few feet behind the player
                 enemy.transform.position = new Vector2(firstCheckPoint.checkPointPosition.x  - 5, firstCheckPoint.checkPointPosition.y);
                 Debug.Log("enemy should have respawned behind player"); //let us know when/where the enemy should respawn
-                //dont forget to take away health when they fail the trick as well
+                sugarManager.healthAmount--; //take one health away if they fail the trick one time
+                //dont forget to implement a consequence for when the player's health goes to zero. 
+
+                
+
             }
         }
     }

@@ -12,11 +12,6 @@ public class SecondCheckPoint : MonoBehaviour
     public GameObject player;
     public GameObject enemy;
 
-
-    void Start()
-    {
-        
-    }
     void OnTriggerEnter2D(Collider2D collider){
         //check if the collider was triggered by the player
         if(collider.tag == "Player")
@@ -33,7 +28,12 @@ public class SecondCheckPoint : MonoBehaviour
                 firstCheckPoint.trickSlider.gameObject.SetActive(false);
                 firstCheckPoint.sliderSpeed --; //if they get the trick right, lower the slider speed to make the next trick easier 
                 //dont forget to make the slider speed increase everytime they take sugar as a penalty for taking it
+                Debug.Log("TRICK ANIMATION PLACE HOLDER"); //let us know when the trick animation is supposed to happen since we dont have the animation for it yet
+                //insert trick animation  
                 //player.GetComponent<JumpController>().StartJump(new Vector2(this.transform.position.x + 10, this.transform.position.y)); //get jump controller from player to initialize jump
+                //after trick is done set is tricking back to false
+                isTricking = false;
+
             } 
             else if (!firstCheckPoint.accurateStop || !firstCheckPoint.buttonPressed)
             {

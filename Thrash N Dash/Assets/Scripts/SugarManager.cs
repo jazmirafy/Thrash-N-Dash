@@ -37,7 +37,7 @@ public class SugarManager : MonoBehaviour
         StartCoroutine(SugarRush(rushTime));
         //make sure the slider speed doesnt go below .2
         if(firstCheckPoint.sliderSpeed > .2){
-        firstCheckPoint.sliderSpeed -= .2; //if they take sugar, make the next trick harder as penalty (remember lower slider speed means faster slider so upping the speed actually makes it slower)
+        firstCheckPoint.sliderSpeed -= .2f; //if they take sugar, make the next trick harder as penalty (remember lower slider speed means faster slider so upping the speed actually makes it slower)
         }
         }
 

@@ -15,6 +15,7 @@ public class SugarManager : MonoBehaviour
     //allows sugar rush cooldown
     public bool sugarRushActive;
     float initialSpeed;
+    public FirstCheckPoint firstCheckPoint;
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +35,10 @@ public class SugarManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.W) && !sugarRushActive && rushTime>=1){
         //Coroutine = allow to delay/modify methods and events until a time or condition is met
         StartCoroutine(SugarRush(rushTime));
-        //add the code to increase the slider speed as a penalty for taking the sugar 
+        //make sure the slider speed doesnt go below .2
+        if(firstCheckPoint.sliderSpeed > .2){
+        firstCheckPoint.sliderSpeed -= .2; //if they take sugar, make the next trick harder as penalty (remember lower slider speed means faster slider so upping the speed actually makes it slower)
+        }
         }
 
     }

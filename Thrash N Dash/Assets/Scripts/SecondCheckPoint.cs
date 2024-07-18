@@ -17,6 +17,8 @@ public class SecondCheckPoint : MonoBehaviour
         if(collider.tag == "Player")
         {
         Debug.Log("player triggered checkpoint 2"); //let us know when the second checkpoint has been triggered
+        //dont forgt to add: if sugar rush is active, then do the trick (make this the first if statement condition being check and make the other two else if)
+        //if the sugar rush is active, the get to "bypass" the trick
             //if the player hit the "green" area of the meter, execute the trick, refill their chances, and deactivate the slider
             if(firstCheckPoint.accurateStop)
             {
@@ -26,7 +28,7 @@ public class SecondCheckPoint : MonoBehaviour
                 firstCheckPoint.chances = 2; //refill the players chances for the time obstacle
                 //deactivate slider at the second checkpoint
                 firstCheckPoint.trickSlider.gameObject.SetActive(false);
-                firstCheckPoint.sliderSpeed --; //if they get the trick right, lower the slider speed to make the next trick easier 
+                firstCheckPoint.sliderSpeed += .2; //if they get the trick right, make the next trick easier (remember lower slider speed means faster slider so upping the speed actually makes it slower)
                 //dont forget to make the slider speed increase everytime they take sugar as a penalty for taking it
                 Debug.Log("TRICK ANIMATION PLACE HOLDER"); //let us know when the trick animation is supposed to happen since we dont have the animation for it yet
                 //insert trick animation  
@@ -46,7 +48,7 @@ public class SecondCheckPoint : MonoBehaviour
                 //dont forget to take away health when they fail the trick as well
 
                 firstCheckPoint.buttonPressed = false; //reset first checkpoint so slider starts moving again
-                firstCheckPoint.chances --; //decrease chances for bad trick
+                firstCheckPoint.sliderSpeed -= .2; //if they get the trick wrong, make the next trick harder (remember lower slider speed means faster slider so upping the speed actually makes it slower)
                 firstCheckPoint.accurateStop = false; //reset accurate stop bool for new attempt
             }
         }

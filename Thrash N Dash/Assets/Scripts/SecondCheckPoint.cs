@@ -27,7 +27,7 @@ public class SecondCheckPoint : MonoBehaviour
                 //deactivate slider at the second checkpoint
                 firstCheckPoint.trickSlider.gameObject.SetActive(false);
                 firstCheckPoint.sliderSpeed += .2f; //if they get the trick right, make the next trick easier (remember lower slider speed means faster slider so upping the speed actually makes it slower) 
-                //player.GetComponent<JumpController>().StartJump(new Vector2(this.transform.position.x + 10, this.transform.position.y)); //get jump controller from player to initialize jump
+                player.GetComponent<JumpController>().StartJump(new Vector2(this.transform.position.x + 10, this.transform.position.y)); //get jump controller from player to initialize jump
                 Debug.Log("TRICK ANIMATION PLACE HOLDER"); //let us know when the trick animation is supposed to happen since we dont have the animation for it yet
                 //insert trick animation
                 //after trick is done set is tricking back to false
@@ -48,5 +48,6 @@ public class SecondCheckPoint : MonoBehaviour
                 firstCheckPoint.accurateStop = false; //reset accurate stop bool for new attempt
             }
         }
+
     }
 }

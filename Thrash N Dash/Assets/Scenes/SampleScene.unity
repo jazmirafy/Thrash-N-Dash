@@ -240,7 +240,7 @@ Transform:
   m_GameObject: {fileID: 42057404}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -60, y: -0.00000011920929, z: -1}
+  m_LocalPosition: {x: -59, y: 1.9999999, z: -1}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5355,6 +5355,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca3790598877405459d72c8da8d55f78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  landingPosition: {fileID: 0}
+  jumpHeight: 5
+  jumpDuration: 1
 --- !u!1 &235914185
 GameObject:
   m_ObjectHideFlags: 0
@@ -5856,7 +5859,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -60, y: -0.00000011920929, z: -1}
+  m_LocalPosition: {x: -59, y: 1.9999999, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5964,7 +5967,7 @@ MonoBehaviour:
   checkPointPosition: {x: 0, y: 0}
   trickSlider: {fileID: 1500602059}
   buttonPressed: 0
-  sliderSpeed: 1
+  sliderSpeed: 0.8
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
@@ -7736,7 +7739,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 3, y: 0, z: 0}
+  m_TrackedObjectOffset: {x: 4, y: 2, z: 0}
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
@@ -8098,8 +8101,8 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 42057406}
   - {fileID: 193056037}
-  - {fileID: 862804526}
   - {fileID: 187330277}
+  - {fileID: 862804526}
   - {fileID: 495735487}
   - {fileID: 963645934}
   - {fileID: 1037304454}

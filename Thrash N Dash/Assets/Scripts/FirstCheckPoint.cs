@@ -18,6 +18,9 @@ public class FirstCheckPoint : MonoBehaviour
     private bool increasing = true; // Flag to indicate if the slider is increasing or decreasing
     public bool sliderEnabled = false; //bool to confirm slider is enabled and ready for Key Press
     public bool accurateStop; //bool to check that the slider was stopped within the correct range
+    public float lowerBound = .4f; //the lower bound of the slider range
+    public float upperBound = .6f; //the upper bound of the slider range that increases if the player gets the trick and decreases if they take sugar
+
 
     // OnEnable is called every time the game object is activated
     void OnEnable()
@@ -53,13 +56,14 @@ public class FirstCheckPoint : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if the user pressed the D button, stop the trick slider at the value they stopped it at
+        //if the user pressed the S button, stop the trick slider at the value they stopped it at
         if (Input.GetKeyDown(KeyCode.S) && !buttonPressed && sliderEnabled)
         {
             buttonPressed = true;
             fillAmount = trickSlider.value;
             trickSlider.value = fillAmount;
-            if (fillAmount >= .5 && fillAmount <= .7)
+            //if the user hits between the lower and upper bound, set accurate stop to tru
+            if (fillAmount >= lowerBound && fillAmount <= upperBound)
                 accurateStop = true;
             else
                 accurateStop = false;

@@ -20,9 +20,6 @@ public class JumpController : MonoBehaviour
     }
     public void StartJump( Vector2 landingPos)
     {
-        //landingPositon = gameObject.GetComponent<Transform>();
-
-
         startPosition = transform.position;
         targetPosition = landingPos;
         isJumping = true;

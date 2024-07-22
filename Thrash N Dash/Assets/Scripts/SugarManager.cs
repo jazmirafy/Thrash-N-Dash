@@ -33,12 +33,12 @@ public class SugarManager : MonoBehaviour
     {
         //if the player takes the sugar by pressing the Q key, they lose health and gain speed
         if(Input.GetKeyDown(KeyCode.W) && !sugarRushActive && rushTime>=1){
-        //Coroutine = allow to delay/modify methods and events until a time or condition is met
-        StartCoroutine(SugarRush(rushTime));
-        //make sure the slider speed doesnt go below .2
-        if(firstCheckPoint.sliderSpeed > .2){
-        firstCheckPoint.sliderSpeed -= .2f; //if they take sugar, make the next trick harder as penalty (remember lower slider speed means faster slider so upping the speed actually makes it slower)
-        }
+            //Coroutine = allow to delay/modify methods and events until a time or condition is met
+            StartCoroutine(SugarRush(rushTime));
+            //make sure the slider speed doesnt go below .2
+            if(firstCheckPoint.sliderSpeed > .2){
+            firstCheckPoint.upperBound -= .03f; //if they take sugar, make the next trick harder as penalty (lower the sliders target interval)
+            }
         }
 
     }

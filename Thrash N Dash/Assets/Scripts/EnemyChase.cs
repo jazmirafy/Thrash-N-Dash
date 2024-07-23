@@ -32,19 +32,18 @@ public class EnemyChase : MonoBehaviour
         } else if(direction.x<0 && facingRight){
             Flip();
         }
-        //gets the AI enemy to move towards the targets postion at a particular speed. (the Time.deltaTime portion is there to make sure the speed is consistent at any framerate/ speed isnt framerate dependent. generally needed in the update method but not fixed update)
-        transform.position = Vector2.MoveTowards(transform.position, target.transform.position, AIspeed * Time.deltaTime);
+        //get the enemies curreent position
+        
+
+
+        //gets the AI enemy to move towards the targets postion at a particular speed. (the Time.deltaTime portion is there to make sure the speed is consistent at any framerate/ speed isnt framerate dependent. 
+        //generally needed in the update method but not fixed update)
+        //keeping the y value of the vector 0 so the enemy only moves horizontally
+        transform.position = Vector2.MoveTowards(transform.position, new Vector2(target.transform.position.x, 0), AIspeed * Time.deltaTime);
 
 
     }
-    //if the enemy's collider trigger gets trigged by an object with a game obstacle tag, jump over it
-    void OnTriggerEnter2D(Collider2D collider){
-        if(collider.tag == "Obstacle"){
-        Debug.Log("Enemy triggered");
-        //rb.AddForce(new Vector2(0, jumpHeight));
-        rb.AddForce(Vector2.up * jumpHeight); //this way of making the enemy jump can be more memory and performance efficient because it doesnt have to create a new vector 2 instance for each jump
-        }
-    }
+
   
     //switches the bool value of whatever facing right currently is, looks are the orientation of the sprite, and then multiplying it by -1 is what flips the sprite the other way
     void Flip(){

@@ -26,7 +26,7 @@ public class FirstCheckPoint : MonoBehaviour
     void OnEnable()
     {
         buttonPressed = false;
-        Debug.Log("slider ping pong should have started"); //let us know slider ping pong should have started
+        Debug.Log("slider has been enabled, lerp should have started"); //let us know slider lerp should have started
 
     }
 
@@ -35,7 +35,7 @@ public class FirstCheckPoint : MonoBehaviour
         //check if the collider was triggered by the player
         if (collider.tag == "Player")
         {
-            Debug.Log("player triggered checkpoint 1"); //let us know when the first checkpoint has been triggered
+            Debug.Log("player triggered activator checkpoint"); //let us know when the checkpoint has been triggered
             //see if the player has chances left
             if (chances > 0)
             {
@@ -43,7 +43,7 @@ public class FirstCheckPoint : MonoBehaviour
                 checkPointPosition = new Vector2((player.transform.position.x-5), player.transform.position.y);
                 trickSlider.gameObject.SetActive(true);//this activates the slider to ping pong
                 sliderEnabled = true;
-                Debug.Log("slider should be enabled"); //let us know slider should be enabled
+                Debug.Log("slider has been set active"); //let us know slider should been set active
             }
             else
             {
@@ -78,6 +78,7 @@ public class FirstCheckPoint : MonoBehaviour
 
             if (increasing)
             {
+                Debug.Log("slider has been enabled, lerp has started"); //let us know slider lerp started
                 trickSlider.value = Mathf.Lerp(0f, 1f, t);
             }
             else

@@ -4911,7 +4911,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 7482667652216324306, guid: 3c153a1e9134caf4b8aff6970d2d5a5b, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -5833,7 +5833,7 @@ MonoBehaviour:
   checkPointPosition: {x: 0, y: 0}
   trickSlider: {fileID: 1500602059}
   buttonPressed: 0
-  sliderSpeed: 0.8
+  sliderSpeed: 0.7
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0

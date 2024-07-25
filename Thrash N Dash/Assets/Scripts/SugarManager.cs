@@ -45,7 +45,7 @@ public class SugarManager : MonoBehaviour
     //ienumerator is exclusively used for a coroutine
     IEnumerator SugarRush(float currentRushTime){
         //decrease player health and decrease the length of the green part of the health bar
-        healthAmount -= 2; // if the player eats sugar their health goes down by 2
+        healthAmount -= 1; // if the player eats sugar their health goes down by 2
         healthBar.fillAmount = healthAmount/ maxHealth;
         if(healthAmount >0){
             sugarRushActive = true;

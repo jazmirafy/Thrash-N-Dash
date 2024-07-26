@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class SugarManager : MonoBehaviour
 {
     public Image healthBar;
-    public float maxHealth = 6;
+    public float maxHealth = 8;
     public float healthAmount;
     public Image speedBar;
     //rushTime is how long the sugar rush lasts

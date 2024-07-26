@@ -12,6 +12,8 @@ public class SecondCheckPoint : MonoBehaviour
     public GameObject player;
     public GameObject enemy;
     public SugarManager sugarManager;
+    public float jumpDistance = 2f;
+
 
     void OnTriggerEnter2D(Collider2D collider){
         //check if the collider was triggered by the player
@@ -28,7 +30,7 @@ public class SecondCheckPoint : MonoBehaviour
                 //deactivate slider at the second checkpoint
                 firstCheckPoint.trickSlider.gameObject.SetActive(false);
                 Debug.Log("slider has been set INactive"); //let us know slider should been set inactive
-                player.GetComponent<JumpController>().StartJump(new Vector2(this.transform.position.x + 10, this.transform.position.y)); //get jump controller from player to initialize jump
+                player.GetComponent<JumpController>().StartJump(new Vector2(this.transform.position.x + jumpDistance, this.transform.position.y)); //get jump controller from player to initialize jump
                 Debug.Log("TRICK ANIMATION PLACE HOLDER"); //let us know when the trick animation is supposed to happen since we dont have the animation for it yet
                 //insert trick animation
                 //after trick is done set is tricking back to false

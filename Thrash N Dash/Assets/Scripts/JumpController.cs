@@ -5,13 +5,12 @@ using UnityEngine;
 public class JumpController : MonoBehaviour
 {
     public Transform landingPosition; // Set this to the desired landing position in the inspector
-    public float jumpHeight = 5f; // Maximum height of the jump
-    public float jumpDuration = 1f; // Duration of the jump from start to finish
-
     private Vector2 startPosition;
     private Vector2 targetPosition;
     private bool isJumping = false;
     private float jumpProgress = 0f;
+    public float jumpHeight = 5f; // Maximum height of the jump
+    public float jumpDuration = 5f; // Duration of the jump from start to finish
 
     // Start is called before the first frame update
     void Start()

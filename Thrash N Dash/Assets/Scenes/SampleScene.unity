@@ -155,8 +155,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 619793210}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -547,6 +547,8 @@ MonoBehaviour:
   enemy: {fileID: 187330274}
   sugarManager: {fileID: 11371175}
   jumpDistance: 3
+  incrementAmount: 10
+  nextBackground: {fileID: 0}
 --- !u!1 &56166442
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,6 +646,8 @@ MonoBehaviour:
   enemy: {fileID: 187330274}
   sugarManager: {fileID: 11371175}
   jumpDistance: 3
+  incrementAmount: 10
+  nextBackground: {fileID: 0}
 --- !u!1 &65187857
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,7 +660,7 @@ GameObject:
   - component: {fileID: 65187860}
   - component: {fileID: 65187859}
   m_Layer: 5
-  m_Name: Background (1)
+  m_Name: Background H
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -955,8 +959,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 626502779}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1297,6 +1301,10 @@ PrefabInstance:
     - target: {fileID: -2253911629886400664, guid: c17ea3ab5c2fb43e88143ff6aa137720, type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: c17ea3ab5c2fb43e88143ff6aa137720, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: c17ea3ab5c2fb43e88143ff6aa137720, type: 3}
       propertyPath: m_TagString
@@ -2156,8 +2164,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2098925184}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2211,7 +2219,7 @@ GameObject:
   - component: {fileID: 312080185}
   - component: {fileID: 312080184}
   m_Layer: 5
-  m_Name: Background (1)
+  m_Name: Background C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2475,6 +2483,10 @@ PrefabInstance:
     - target: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
       propertyPath: m_TagString
@@ -2976,7 +2988,7 @@ GameObject:
   - component: {fileID: 481000940}
   - component: {fileID: 481000939}
   m_Layer: 5
-  m_Name: Background (1)
+  m_Name: Background D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3159,6 +3171,10 @@ PrefabInstance:
     - target: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
       propertyPath: m_TagString
@@ -3374,6 +3390,10 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
@@ -3587,7 +3607,7 @@ RectTransform:
   m_Father: {fileID: 1381868331}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3822,7 +3842,6 @@ GameObject:
   m_Component:
   - component: {fileID: 633664423}
   - component: {fileID: 633664421}
-  - component: {fileID: 633664424}
   - component: {fileID: 633664420}
   m_Layer: 0
   m_Name: Deactivator Checkpoint B
@@ -3894,6 +3913,8 @@ MonoBehaviour:
   enemy: {fileID: 187330274}
   sugarManager: {fileID: 11371175}
   jumpDistance: 5
+  incrementAmount: 10
+  nextBackground: {fileID: 312080184}
 --- !u!4 &633664423
 Transform:
   m_ObjectHideFlags: 0
@@ -3910,21 +3931,6 @@ Transform:
   - {fileID: 1166162164}
   m_Father: {fileID: 2076945324}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &633664424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 633664419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca3790598877405459d72c8da8d55f78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  landingPosition: {fileID: 0}
-  jumpHeight: 0
-  jumpDuration: 0
 --- !u!1 &641975595
 GameObject:
   m_ObjectHideFlags: 0
@@ -4028,7 +4034,7 @@ GameObject:
   - component: {fileID: 692794808}
   - component: {fileID: 692794807}
   m_Layer: 5
-  m_Name: Background (1)
+  m_Name: Background J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4160,7 +4166,7 @@ RectTransform:
   m_Father: {fileID: 1684106187}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4217,6 +4223,10 @@ PrefabInstance:
     - target: {fileID: -2253911629886400664, guid: 5f7ca51ea3d9742de9afaa3cfcc16ab2, type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: 5f7ca51ea3d9742de9afaa3cfcc16ab2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 5f7ca51ea3d9742de9afaa3cfcc16ab2, type: 3}
       propertyPath: m_TagString
@@ -4382,6 +4392,8 @@ MonoBehaviour:
   enemy: {fileID: 187330274}
   sugarManager: {fileID: 11371175}
   jumpDistance: 5
+  incrementAmount: 10
+  nextBackground: {fileID: 0}
 --- !u!1 &729800818
 GameObject:
   m_ObjectHideFlags: 0
@@ -5030,6 +5042,8 @@ MonoBehaviour:
   enemy: {fileID: 187330274}
   sugarManager: {fileID: 11371175}
   jumpDistance: 5
+  incrementAmount: 10
+  nextBackground: {fileID: 1080299818}
 --- !u!1 &816179670
 GameObject:
   m_ObjectHideFlags: 0
@@ -5219,7 +5233,7 @@ GameObject:
   - component: {fileID: 830575687}
   - component: {fileID: 830575686}
   m_Layer: 5
-  m_Name: Background (1)
+  m_Name: Background A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14497,7 +14511,7 @@ GameObject:
   - component: {fileID: 963645932}
   - component: {fileID: 963645931}
   m_Layer: 5
-  m_Name: Speed Bar Canvas (1)
+  m_Name: Speed Bar Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14724,7 +14738,7 @@ RectTransform:
   m_Father: {fileID: 31269199}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -14863,6 +14877,8 @@ MonoBehaviour:
   enemy: {fileID: 187330274}
   sugarManager: {fileID: 11371175}
   jumpDistance: 3
+  incrementAmount: 10
+  nextBackground: {fileID: 0}
 --- !u!1 &1017106143
 GameObject:
   m_ObjectHideFlags: 0
@@ -15154,6 +15170,8 @@ MonoBehaviour:
   enemy: {fileID: 187330274}
   sugarManager: {fileID: 11371175}
   jumpDistance: 3
+  incrementAmount: 10
+  nextBackground: {fileID: 0}
 --- !u!1 &1079214809
 GameObject:
   m_ObjectHideFlags: 0
@@ -15241,7 +15259,7 @@ GameObject:
   - component: {fileID: 1080299819}
   - component: {fileID: 1080299818}
   m_Layer: 5
-  m_Name: Background (1)
+  m_Name: Background B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15614,6 +15632,8 @@ MonoBehaviour:
   enemy: {fileID: 187330274}
   sugarManager: {fileID: 11371175}
   jumpDistance: 5
+  incrementAmount: 10
+  nextBackground: {fileID: 0}
 --- !u!1 &1126465954
 GameObject:
   m_ObjectHideFlags: 0
@@ -15748,8 +15768,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1304677475}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -15962,7 +15982,7 @@ RectTransform:
   m_Father: {fileID: 1935854846}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -16036,8 +16056,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1091091260}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -16388,8 +16408,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1166787846}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -16844,6 +16864,10 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 79d51ed8f9e714a65847aa59a7968481, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: 79d51ed8f9e714a65847aa59a7968481, type: 3}
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
@@ -17006,7 +17030,7 @@ GameObject:
   - component: {fileID: 1402826182}
   - component: {fileID: 1402826181}
   m_Layer: 5
-  m_Name: Background (1)
+  m_Name: Background E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17443,6 +17467,8 @@ MonoBehaviour:
   enemy: {fileID: 187330274}
   sugarManager: {fileID: 11371175}
   jumpDistance: 5
+  incrementAmount: 10
+  nextBackground: {fileID: 0}
 --- !u!1 &1492520305
 GameObject:
   m_ObjectHideFlags: 0
@@ -17544,7 +17570,7 @@ RectTransform:
   m_GameObject: {fileID: 1500602057}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.1}
-  m_LocalScale: {x: 1, y: 0.2, z: 1}
+  m_LocalScale: {x: 1.5, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 388582988}
@@ -17759,7 +17785,7 @@ GameObject:
   - component: {fileID: 1567611318}
   - component: {fileID: 1567611317}
   m_Layer: 5
-  m_Name: Background (1)
+  m_Name: Background F
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22183,7 +22209,7 @@ RectTransform:
   m_Father: {fileID: 1439620108}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -22723,7 +22749,7 @@ RectTransform:
   m_Father: {fileID: 805418639}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -22882,6 +22908,10 @@ PrefabInstance:
     - target: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
       propertyPath: m_TagString
@@ -23440,6 +23470,10 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
@@ -23616,8 +23650,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1282535525}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -23802,7 +23836,7 @@ GameObject:
   - component: {fileID: 1909645048}
   - component: {fileID: 1909645047}
   m_Layer: 5
-  m_Name: Background (1)
+  m_Name: Background I
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23973,7 +24007,7 @@ RectTransform:
   m_Father: {fileID: 298315043}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -24251,6 +24285,8 @@ MonoBehaviour:
   enemy: {fileID: 187330274}
   sugarManager: {fileID: 11371175}
   jumpDistance: 3
+  incrementAmount: 10
+  nextBackground: {fileID: 0}
 --- !u!4 &2006400232 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: 79d51ed8f9e714a65847aa59a7968481, type: 3}
@@ -28622,7 +28658,7 @@ RectTransform:
   m_Father: {fileID: 536854055}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -28887,8 +28923,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 892053074}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -28942,7 +28978,7 @@ GameObject:
   - component: {fileID: 2143463340}
   - component: {fileID: 2143463339}
   m_Layer: 5
-  m_Name: Background (1)
+  m_Name: Background G
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

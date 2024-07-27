@@ -41,7 +41,7 @@ public class FirstCheckPoint : MonoBehaviour
             {
                 //save the players position when they hit the checkpoint so we know where to respawn them later if they miss the trick
                 checkPointPosition = new Vector2((player.transform.position.x-5), player.transform.position.y);
-                trickSlider.gameObject.SetActive(true);//this activates the slider to ping pong
+                trickSlider.gameObject.SetActive(true);//this activates the slider to lerp
                 sliderEnabled = true;
                 Debug.Log("slider has been set active"); //let us know slider should been set active
             }
@@ -59,7 +59,7 @@ public class FirstCheckPoint : MonoBehaviour
         //if the user pressed the S button, stop the trick slider at the value they stopped it at
         if (Input.GetKeyDown(KeyCode.S) && !buttonPressed && sliderEnabled)
         {
-            buttonPressed = true;
+            buttonPressed = true; //set button pressed to true to indicate the user pressed S
             fillAmount = trickSlider.value;
             trickSlider.value = fillAmount;
             //if the user hits between the lower and upper bound, set accurate stop to tru

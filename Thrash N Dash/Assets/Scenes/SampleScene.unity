@@ -155,8 +155,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 619793210}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -325,7 +325,7 @@ MonoBehaviour:
   rushTime: 6
   playerController: {fileID: 193056039}
   sugarRushActive: 0
-  firstCheckPoint: {fileID: 765795694}
+  sliderManager: {fileID: 0}
 --- !u!4 &11371176
 Transform:
   m_ObjectHideFlags: 0
@@ -443,7 +443,7 @@ Transform:
   m_GameObject: {fileID: 42057404}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -234.39, y: 2, z: -1}
+  m_LocalPosition: {x: -234.60759, y: 2.5694437, z: -1}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -546,9 +546,8 @@ MonoBehaviour:
   player: {fileID: 193056034}
   enemy: {fileID: 187330274}
   sugarManager: {fileID: 11371175}
+  sliderManager: {fileID: 317021511}
   jumpDistance: 3
-  incrementAmount: 10
-  nextBackground: {fileID: 0}
 --- !u!1 &56166442
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,9 +644,8 @@ MonoBehaviour:
   player: {fileID: 193056034}
   enemy: {fileID: 187330274}
   sugarManager: {fileID: 11371175}
+  sliderManager: {fileID: 317021511}
   jumpDistance: 3
-  incrementAmount: 10
-  nextBackground: {fileID: 0}
 --- !u!1 &65187857
 GameObject:
   m_ObjectHideFlags: 0
@@ -665,7 +663,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &65187858
 RectTransform:
   m_ObjectHideFlags: 0
@@ -959,8 +957,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 626502779}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1035,15 +1033,15 @@ MonoBehaviour:
   chances: 2
   player: {fileID: 193056034}
   enemy: {fileID: 187330274}
+  sliderManager: {fileID: 317021511}
   checkPointPosition: {x: 0, y: 0}
   trickSlider: {fileID: 641975597}
+  backgroundImage: {fileID: 2058902564}
   buttonPressed: 0
   sliderSpeed: 0.7
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
-  lowerBound: 0.4
-  upperBound: 0.6
 --- !u!61 &109782970
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1098,7 +1096,7 @@ Transform:
   m_GameObject: {fileID: 109782968}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.438, y: 1.163, z: 0}
+  m_LocalPosition: {x: -1.107, y: 1.163, z: 0}
   m_LocalScale: {x: 0.07692307, y: 0.15384614, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1304,7 +1302,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: c17ea3ab5c2fb43e88143ff6aa137720, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: c17ea3ab5c2fb43e88143ff6aa137720, type: 3}
       propertyPath: m_TagString
@@ -2063,15 +2061,15 @@ MonoBehaviour:
   chances: 2
   player: {fileID: 193056034}
   enemy: {fileID: 187330274}
+  sliderManager: {fileID: 317021511}
   checkPointPosition: {x: 0, y: 0}
   trickSlider: {fileID: 1683614224}
+  backgroundImage: {fileID: 1419730504}
   buttonPressed: 0
   sliderSpeed: 0.7
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
-  lowerBound: 0.4
-  upperBound: 0.6
 --- !u!61 &304291105
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2126,7 +2124,7 @@ Transform:
   m_GameObject: {fileID: 304291103}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.419, y: 1.165, z: 0}
+  m_LocalPosition: {x: -1.109, y: 1.165, z: 0}
   m_LocalScale: {x: 0.07692307, y: 0.15384614, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2164,8 +2162,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2098925184}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2224,7 +2222,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &312080183
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2282,6 +2280,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 312080182}
   m_CullTransparentMesh: 1
+--- !u!1 &317021510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 317021512}
+  - component: {fileID: 317021511}
+  m_Layer: 0
+  m_Name: Slider Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &317021511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317021510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272fe30b1dafaf94e931176b72f666e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lowerBound: 0.4
+  upperBound: 0.6
+--- !u!4 &317021512
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317021510}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -66.55702, y: 4.7511015, z: 0.9565909}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &366651986
 GameObject:
   m_ObjectHideFlags: 0
@@ -2415,7 +2459,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 0
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2486,7 +2530,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
       propertyPath: m_TagString
@@ -2832,15 +2876,15 @@ MonoBehaviour:
   chances: 2
   player: {fileID: 193056034}
   enemy: {fileID: 187330274}
+  sliderManager: {fileID: 317021511}
   checkPointPosition: {x: 0, y: 0}
   trickSlider: {fileID: 943406744}
+  backgroundImage: {fileID: 1017106145}
   buttonPressed: 0
   sliderSpeed: 0.7
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
-  lowerBound: 0.4
-  upperBound: 0.6
 --- !u!61 &451279344
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2993,7 +3037,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &481000938
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3174,7 +3218,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
       propertyPath: m_TagString
@@ -3333,7 +3377,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -234.39, y: 2, z: -1}
+  m_LocalPosition: {x: -234.60759, y: 2.5694437, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3391,7 +3435,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
       propertyPath: m_TagString
@@ -3607,7 +3651,7 @@ RectTransform:
   m_Father: {fileID: 1381868331}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3912,9 +3956,8 @@ MonoBehaviour:
   player: {fileID: 193056034}
   enemy: {fileID: 187330274}
   sugarManager: {fileID: 11371175}
+  sliderManager: {fileID: 317021511}
   jumpDistance: 5
-  incrementAmount: 10
-  nextBackground: {fileID: 312080184}
 --- !u!4 &633664423
 Transform:
   m_ObjectHideFlags: 0
@@ -4039,7 +4082,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &692794806
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4166,7 +4209,7 @@ RectTransform:
   m_Father: {fileID: 1684106187}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4226,7 +4269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 5f7ca51ea3d9742de9afaa3cfcc16ab2, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 5f7ca51ea3d9742de9afaa3cfcc16ab2, type: 3}
       propertyPath: m_TagString
@@ -4391,9 +4434,8 @@ MonoBehaviour:
   player: {fileID: 193056034}
   enemy: {fileID: 187330274}
   sugarManager: {fileID: 11371175}
+  sliderManager: {fileID: 317021511}
   jumpDistance: 5
-  incrementAmount: 10
-  nextBackground: {fileID: 0}
 --- !u!1 &729800818
 GameObject:
   m_ObjectHideFlags: 0
@@ -4636,15 +4678,15 @@ MonoBehaviour:
   chances: 2
   player: {fileID: 193056034}
   enemy: {fileID: 187330274}
+  sliderManager: {fileID: 317021511}
   checkPointPosition: {x: 0, y: 0}
   trickSlider: {fileID: 729800820}
+  backgroundImage: {fileID: 410967078}
   buttonPressed: 0
   sliderSpeed: 0.7
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
-  lowerBound: 0.4
-  upperBound: 0.6
 --- !u!61 &739093560
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4738,15 +4780,15 @@ MonoBehaviour:
   chances: 2
   player: {fileID: 193056034}
   enemy: {fileID: 187330274}
+  sliderManager: {fileID: 317021511}
   checkPointPosition: {x: 0, y: 0}
   trickSlider: {fileID: 1500602059}
+  backgroundImage: {fileID: 388582989}
   buttonPressed: 0
   sliderSpeed: 0.7
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
-  lowerBound: 0.4
-  upperBound: 0.6
 --- !u!4 &765795696
 Transform:
   m_ObjectHideFlags: 0
@@ -4840,15 +4882,15 @@ MonoBehaviour:
   chances: 2
   player: {fileID: 193056034}
   enemy: {fileID: 187330274}
+  sliderManager: {fileID: 317021511}
   checkPointPosition: {x: 0, y: 0}
   trickSlider: {fileID: 10212742}
+  backgroundImage: {fileID: 1079214811}
   buttonPressed: 0
   sliderSpeed: 0.7
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
-  lowerBound: 0.4
-  upperBound: 0.6
 --- !u!61 &798405420
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4903,7 +4945,7 @@ Transform:
   m_GameObject: {fileID: 798405418}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.427, y: 1.157, z: 0}
+  m_LocalPosition: {x: -1.107, y: 1.157, z: 0}
   m_LocalScale: {x: 0.07692307, y: 0.15384614, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5041,9 +5083,8 @@ MonoBehaviour:
   player: {fileID: 193056034}
   enemy: {fileID: 187330274}
   sugarManager: {fileID: 11371175}
+  sliderManager: {fileID: 317021511}
   jumpDistance: 5
-  incrementAmount: 10
-  nextBackground: {fileID: 1080299818}
 --- !u!1 &816179670
 GameObject:
   m_ObjectHideFlags: 0
@@ -5077,15 +5118,15 @@ MonoBehaviour:
   chances: 2
   player: {fileID: 193056034}
   enemy: {fileID: 187330274}
+  sliderManager: {fileID: 317021511}
   checkPointPosition: {x: 0, y: 0}
   trickSlider: {fileID: 1254209156}
+  backgroundImage: {fileID: 1694164667}
   buttonPressed: 0
   sliderSpeed: 0.7
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
-  lowerBound: 0.4
-  upperBound: 0.6
 --- !u!61 &816179672
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5140,7 +5181,7 @@ Transform:
   m_GameObject: {fileID: 816179670}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.435, y: 1.168, z: 0}
+  m_LocalPosition: {x: -1.091, y: 1.168, z: 0}
   m_LocalScale: {x: 0.07692307, y: 0.15384614, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5238,7 +5279,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &830575685
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14738,7 +14779,7 @@ RectTransform:
   m_Father: {fileID: 31269199}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -14876,9 +14917,8 @@ MonoBehaviour:
   player: {fileID: 193056034}
   enemy: {fileID: 187330274}
   sugarManager: {fileID: 11371175}
+  sliderManager: {fileID: 317021511}
   jumpDistance: 3
-  incrementAmount: 10
-  nextBackground: {fileID: 0}
 --- !u!1 &1017106143
 GameObject:
   m_ObjectHideFlags: 0
@@ -15169,9 +15209,8 @@ MonoBehaviour:
   player: {fileID: 193056034}
   enemy: {fileID: 187330274}
   sugarManager: {fileID: 11371175}
+  sliderManager: {fileID: 317021511}
   jumpDistance: 3
-  incrementAmount: 10
-  nextBackground: {fileID: 0}
 --- !u!1 &1079214809
 GameObject:
   m_ObjectHideFlags: 0
@@ -15264,7 +15303,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1080299817
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15355,15 +15394,15 @@ MonoBehaviour:
   chances: 2
   player: {fileID: 193056034}
   enemy: {fileID: 187330274}
+  sliderManager: {fileID: 317021511}
   checkPointPosition: {x: 0, y: 0}
   trickSlider: {fileID: 1483189379}
+  backgroundImage: {fileID: 1269907384}
   buttonPressed: 0
   sliderSpeed: 0.7
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
-  lowerBound: 0.4
-  upperBound: 0.6
 --- !u!61 &1087272373
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15631,9 +15670,8 @@ MonoBehaviour:
   player: {fileID: 193056034}
   enemy: {fileID: 187330274}
   sugarManager: {fileID: 11371175}
+  sliderManager: {fileID: 317021511}
   jumpDistance: 5
-  incrementAmount: 10
-  nextBackground: {fileID: 0}
 --- !u!1 &1126465954
 GameObject:
   m_ObjectHideFlags: 0
@@ -15768,8 +15806,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1304677475}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -15982,7 +16020,7 @@ RectTransform:
   m_Father: {fileID: 1935854846}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -16056,8 +16094,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1091091260}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -16177,15 +16215,15 @@ MonoBehaviour:
   chances: 2
   player: {fileID: 193056034}
   enemy: {fileID: 187330274}
+  sliderManager: {fileID: 317021511}
   checkPointPosition: {x: 0, y: 0}
   trickSlider: {fileID: 420926319}
+  backgroundImage: {fileID: 1885760237}
   buttonPressed: 0
   sliderSpeed: 0.7
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
-  lowerBound: 0.4
-  upperBound: 0.6
 --- !u!4 &1184510667
 Transform:
   m_ObjectHideFlags: 0
@@ -16408,8 +16446,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1166787846}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -16865,7 +16903,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 79d51ed8f9e714a65847aa59a7968481, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 79d51ed8f9e714a65847aa59a7968481, type: 3}
       propertyPath: m_TagString
@@ -17035,7 +17073,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1402826180
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17466,9 +17504,8 @@ MonoBehaviour:
   player: {fileID: 193056034}
   enemy: {fileID: 187330274}
   sugarManager: {fileID: 11371175}
+  sliderManager: {fileID: 317021511}
   jumpDistance: 5
-  incrementAmount: 10
-  nextBackground: {fileID: 0}
 --- !u!1 &1492520305
 GameObject:
   m_ObjectHideFlags: 0
@@ -17790,7 +17827,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1567611316
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22209,7 +22246,7 @@ RectTransform:
   m_Father: {fileID: 1439620108}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -22749,7 +22786,7 @@ RectTransform:
   m_Father: {fileID: 805418639}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -22911,7 +22948,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
       propertyPath: m_TagString
@@ -23214,14 +23251,14 @@ MonoBehaviour:
   m_YDamping: 0
   m_ZDamping: 0
   m_TargetMovementOnly: 1
-  m_ScreenX: 0.5
-  m_ScreenY: 0.5
+  m_ScreenX: 0.51223946
+  m_ScreenY: 0.5569444
   m_CameraDistance: 1
-  m_DeadZoneWidth: 0
-  m_DeadZoneHeight: 0
+  m_DeadZoneWidth: 0.01
+  m_DeadZoneHeight: 2
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 1.18
+  m_SoftZoneWidth: 2
   m_SoftZoneHeight: 2
   m_BiasX: 0
   m_BiasY: 0
@@ -23282,15 +23319,15 @@ MonoBehaviour:
   chances: 2
   player: {fileID: 193056034}
   enemy: {fileID: 187330274}
+  sliderManager: {fileID: 317021511}
   checkPointPosition: {x: 0, y: 0}
   trickSlider: {fileID: 1728111989}
+  backgroundImage: {fileID: 899609955}
   buttonPressed: 0
   sliderSpeed: 0.7
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
-  lowerBound: 0.4
-  upperBound: 0.6
 --- !u!61 &1772540526
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23471,7 +23508,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
       propertyPath: m_TagString
@@ -23601,7 +23638,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 0
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -23650,8 +23687,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1282535525}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -23841,7 +23878,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1909645046
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24007,7 +24044,7 @@ RectTransform:
   m_Father: {fileID: 298315043}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -24284,9 +24321,8 @@ MonoBehaviour:
   player: {fileID: 193056034}
   enemy: {fileID: 187330274}
   sugarManager: {fileID: 11371175}
+  sliderManager: {fileID: 317021511}
   jumpDistance: 3
-  incrementAmount: 10
-  nextBackground: {fileID: 0}
 --- !u!4 &2006400232 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: 79d51ed8f9e714a65847aa59a7968481, type: 3}
@@ -28658,7 +28694,7 @@ RectTransform:
   m_Father: {fileID: 536854055}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -28923,8 +28959,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 892053074}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -28983,7 +29019,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2143463338
 RectTransform:
   m_ObjectHideFlags: 0
@@ -29067,3 +29103,4 @@ SceneRoots:
   - {fileID: 406369220}
   - {fileID: 1826160485}
   - {fileID: 1397164467}
+  - {fileID: 317021512}

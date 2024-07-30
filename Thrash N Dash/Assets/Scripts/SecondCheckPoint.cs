@@ -10,35 +10,12 @@ public class SecondCheckPoint : MonoBehaviour
     public GameObject player;
     public GameObject enemy;
     public SugarManager sugarManager;
+    public SliderManager sliderManager;
     public float jumpDistance = 2f;
-    public float incrementAmount = 10f;
-    public Image nextBackground;
-    private RectTransform rectTransform;
-    private Vector2 originalSizeDelta;
-    private Vector2 originalAnchoredPosition;
-    private float stretchAmount;
+    float incrementAmount = .01f;
+    //public Image nextBackground;
 
-    void Awake()
-    {
-        // Initialize variables
-        rectTransform = nextBackground.GetComponent<RectTransform>();
-        originalSizeDelta = rectTransform.sizeDelta;
-        originalAnchoredPosition = rectTransform.anchoredPosition;
-    }
 
-    public void StretchTop(float amount)
-    {
-        // Increase the size of the background
-        Vector2 newSize = rectTransform.sizeDelta;
-        newSize.y += amount;  // increment the y size
-        rectTransform.sizeDelta = newSize;
-
-        // Recalculate the anchored position
-        Vector2 newPosition = originalAnchoredPosition;
-        float yOffset = (originalSizeDelta.y * (stretchAmount - 1)) / 2;  // adjust position based on the increment
-        newPosition.y += yOffset;
-        rectTransform.anchoredPosition = newPosition;
-    }
 
     void OnTriggerEnter2D(Collider2D collider)
     {
@@ -64,8 +41,10 @@ public class SecondCheckPoint : MonoBehaviour
 
                 if (firstCheckPoint.accurateStop)
                 {
-                    firstCheckPoint.upperBound += incrementAmount; // Make the next trick easier by making the green area interval wider
-                    StretchTop(incrementAmount);
+                    //give the incentive for doing the trick as expanding the target area
+                    sliderManager.upperBound = Mathf.Min((sliderManager.upperBound + .01f), .85f); 
+                    sliderManager.lowerBound = Mathf.Max((sliderManager.lowerBound - .01f), .20f);
+                    //sliderManager.StretchTop(nextBackground, incrementAmount);
                 }
 
                 // Refill the player's chances for the next obstacle
@@ -79,7 +58,7 @@ public class SecondCheckPoint : MonoBehaviour
                 Debug.Log("player should have respawned at activator checkpoint");
 
                 // Respawn the enemy a few feet behind the player
-                enemy.transform.position = new Vector2(firstCheckPoint.checkPointPosition.x - 5, firstCheckPoint.checkPointPosition.y);
+                enemy.transform.position = new Vector2(firstCheckPoint.checkPointPosition.x - 3, firstCheckPoint.checkPointPosition.y);
                 Debug.Log("enemy should have respawned behind player");
 
                 // Take away health when they fail the trick

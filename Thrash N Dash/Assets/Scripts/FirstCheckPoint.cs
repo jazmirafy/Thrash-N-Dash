@@ -9,17 +9,17 @@ public class FirstCheckPoint : MonoBehaviour
     public float chances = 2f;
     public GameObject player;
     public GameObject enemy;
+    public SliderManager sliderManager;
     public Vector2 checkPointPosition;
     public Slider trickSlider;
+    public Image backgroundImage;
     public bool buttonPressed = false;
-    public float sliderSpeed;
+    public float sliderSpeed = .7f;
     public float fillAmount;
     private float elapsedTime = 0f; // Time elapsed since the start of the cycle
     private bool increasing = true; // Flag to indicate if the slider is increasing or decreasing
     public bool sliderEnabled = false; //bool to confirm slider is enabled and ready for Key Press
     public bool accurateStop; //bool to check that the slider was stopped within the correct range
-    public float lowerBound = .4f; //the lower bound of the slider range
-    public float upperBound = .6f; //the upper bound of the slider range that increases if the player gets the trick and decreases if they take sugar
 
 
     // OnEnable is called every time the game object is activated
@@ -40,8 +40,8 @@ public class FirstCheckPoint : MonoBehaviour
             if (chances > 0)
             {
                 //save the players position when they hit the checkpoint so we know where to respawn them later if they miss the trick
-                checkPointPosition = new Vector2((player.transform.position.x-5), player.transform.position.y);
-                trickSlider.gameObject.SetActive(true);//this activates the slider to ping pong
+                checkPointPosition = new Vector2((player.transform.position.x), player.transform.position.y);
+                trickSlider.gameObject.SetActive(true);//this activates the slider to lerp
                 sliderEnabled = true;
                 Debug.Log("slider has been set active"); //let us know slider should been set active
             }
@@ -56,19 +56,7 @@ public class FirstCheckPoint : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if the user pressed the S button, stop the trick slider at the value they stopped it at
-        if (Input.GetKeyDown(KeyCode.S) && !buttonPressed && sliderEnabled)
-        {
-            buttonPressed = true;
-            fillAmount = trickSlider.value;
-            trickSlider.value = fillAmount;
-            //if the user hits between the lower and upper bound, set accurate stop to tru
-            if (fillAmount >= lowerBound && fillAmount <= upperBound)
-                accurateStop = true;
-            else
-                accurateStop = false;
-            return;
-        }
+
         if (!buttonPressed)
         {
             elapsedTime += Time.deltaTime;
@@ -85,12 +73,34 @@ public class FirstCheckPoint : MonoBehaviour
             {
                 trickSlider.value = Mathf.Lerp(1f, 0f, t);
             }
+            //if the handle is over the target area make the slider turn green
+            if(trickSlider.value >= sliderManager.lowerBound &&  trickSlider.value <= sliderManager.upperBound){
+
+                backgroundImage.color = Color.green;
+            }
+            else
+            {
+                backgroundImage.color = Color.blue;
+            }
 
             if (t >= 1f)
             {
                 elapsedTime = 0f;
                 increasing = !increasing;
             }
+        }
+        //if the user pressed the S button, stop the trick slider at the value they stopped it at
+        if (Input.GetKeyDown(KeyCode.S) && !buttonPressed && sliderEnabled)
+        {
+            buttonPressed = true; //set button pressed to true to indicate the user pressed S
+            fillAmount = trickSlider.value;
+            trickSlider.value = fillAmount;
+            //if the user hits between the lower and upper bound, set accurate stop to tru
+            if (fillAmount >= sliderManager.lowerBound && fillAmount <= sliderManager.upperBound)
+                accurateStop = true;
+            else
+                accurateStop = false;
+            return;
         }
     }
 }

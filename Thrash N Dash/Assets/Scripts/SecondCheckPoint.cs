@@ -1,72 +1,60 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public class SecondCheckPoint : MonoBehaviour
 {      
+    //dont forget to put the isTricking variable in the player controller so the player doesnt have control over the racoon when it does the trick animation
     public bool isTricking = false;
     public FirstCheckPoint firstCheckPoint;
     public GameObject player;
     public GameObject enemy;
     public SugarManager sugarManager;
-    public SliderManager sliderManager;
     public float jumpDistance = 2f;
-    float incrementAmount = .01f;
-    //public Image nextBackground;
 
 
-
-    void OnTriggerEnter2D(Collider2D collider)
-    {
-        // Check if the collider was triggered by the player
-        if (collider.tag == "Player")
+    void OnTriggerEnter2D(Collider2D collider){
+        //check if the collider was triggered by the player
+        if(collider.tag == "Player")
         {
-            Debug.Log("player triggered deactivator checkpoint");
-
-            if (firstCheckPoint.accurateStop || sugarManager.sugarRushActive)
+        Debug.Log("player triggered deactivator checkpoint"); //let us know when the second checkpoint has been triggered
+        //dont forgt to add: if sugar rush is active, then do the trick (make this the first if statement condition being check and make the other two else if)
+        //if the sugar rush is active, the get to "bypass" the trick
+            //if the player hit the "green" area of the meter, execute the trick, refill their chances, and deactivate the slider
+            //or if the player is currently in a sugar rush, let them bypass the trick
+            if(firstCheckPoint.accurateStop || sugarManager.sugarRushActive)
             {
                 isTricking = true;
-                // Deactivate slider at the second checkpoint
+                //deactivate slider at the second checkpoint
                 firstCheckPoint.trickSlider.gameObject.SetActive(false);
-                firstCheckPoint.sliderEnabled = false;
-                Debug.Log("slider has been set INactive");
-
-                // Start the jump
-                player.GetComponent<JumpController>().StartJump(new Vector2(this.transform.position.x + jumpDistance, this.transform.position.y));
-                Debug.Log("TRICK ANIMATION PLACE HOLDER");
-
-                // After trick is done, set isTricking back to false
+                Debug.Log("slider has been set INactive"); //let us know slider should been set inactive
+                player.GetComponent<JumpController>().StartJump(new Vector2(this.transform.position.x + jumpDistance, this.transform.position.y)); //get jump controller from player to initialize jump
+                Debug.Log("TRICK ANIMATION PLACE HOLDER"); //let us know when the trick animation is supposed to happen since we dont have the animation for it yet
+                //insert trick animation
+                //after trick is done set is tricking back to false
                 isTricking = false;
-
-                if (firstCheckPoint.accurateStop)
-                {
-                    //give the incentive for doing the trick as expanding the target area
-                    sliderManager.upperBound = Mathf.Min((sliderManager.upperBound + .01f), .85f); 
-                    sliderManager.lowerBound = Mathf.Max((sliderManager.lowerBound - .01f), .20f);
-                    //sliderManager.StretchTop(nextBackground, incrementAmount);
+                if(firstCheckPoint.accurateStop){
+                    firstCheckPoint.upperBound += .03f; //if they get the trick right, make the next trick easier by making the green area interval wider
                 }
-
-                // Refill the player's chances for the next obstacle
-                firstCheckPoint.chances = 2;
-                firstCheckPoint.accurateStop = false;
-            }
+                firstCheckPoint.chances = 2; //refill the players chances for the next obstacle
+                firstCheckPoint.accurateStop = false; //reset accurate stop bool for new attempt
+            } 
             else if (!firstCheckPoint.accurateStop || !firstCheckPoint.buttonPressed)
             {
-                // If the player didn't hit the "green" area of the meter or didn't press the button in time, respawn them at the first checkpoint
-                player.transform.position = firstCheckPoint.checkPointPosition;
-                Debug.Log("player should have respawned at activator checkpoint");
+                //if the player didnt hit the "green" area of the meter or they didnt press the button in time, respawn them at the first checkpoint
+                player.transform.position = firstCheckPoint.checkPointPosition; //respawn the player at the checkpoint
+                Debug.Log("player should have respawned at activator checkpoint"); //let us know when/where the player should respawn
+                //respawn the enemy a few feet behind the player
+                enemy.transform.position = new Vector2(firstCheckPoint.checkPointPosition.x  - 5, firstCheckPoint.checkPointPosition.y);
+                Debug.Log("enemy should have respawned behind player"); //let us know when/where the enemy should respawn
+                //dont forget to take away health when they fail the trick as well
 
-                // Respawn the enemy a few feet behind the player
-                enemy.transform.position = new Vector2(firstCheckPoint.checkPointPosition.x - 3, firstCheckPoint.checkPointPosition.y);
-                Debug.Log("enemy should have respawned behind player");
-
-                // Take away health when they fail the trick
-                // Subtract player's health here if needed
-
-                firstCheckPoint.buttonPressed = false; // Reset first checkpoint so slider starts moving again
-                firstCheckPoint.chances--; // Take away a chance
+                firstCheckPoint.buttonPressed = false; //reset first checkpoint so slider starts moving again
+                firstCheckPoint.chances --; //take away a chance
             }
         }
+
     }
 }

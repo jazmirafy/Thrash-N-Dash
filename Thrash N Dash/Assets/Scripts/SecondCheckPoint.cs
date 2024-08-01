@@ -12,7 +12,7 @@ public class SecondCheckPoint : MonoBehaviour
     public SugarManager sugarManager;
     public SliderManager sliderManager;
     public float jumpDistance = 2f;
-    float incrementAmount = .01f;
+    //float incrementAmount = .01f;
     //public Image nextBackground;
 
 

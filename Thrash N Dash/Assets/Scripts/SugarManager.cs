@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class SugarManager : MonoBehaviour
 {
     public Image healthBar;
-    public float maxHealth = 8;
+    public float maxHealth = 6;
     public float healthAmount;
     public Image speedBar;
     //rushTime is how long the sugar rush lasts
@@ -32,7 +32,7 @@ public class SugarManager : MonoBehaviour
     void Update()
     {
         //if the player takes the sugar by pressing the Q key, they lose health and gain speed
-        if(Input.GetKeyDown(KeyCode.W) && !sugarRushActive /*&& rushTime>=1*/){
+        if((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.JoystickButton3)) && !sugarRushActive /*&& rushTime>=1*/){
             //Coroutine = allow to delay/modify methods and events until a time or condition is met
             StartCoroutine(SugarRush(rushTime));
             //give a penalty for taking sugar by decreasing the target area

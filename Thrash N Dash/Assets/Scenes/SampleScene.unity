@@ -1122,7 +1122,6 @@ MonoBehaviour:
   trickSlider: {fileID: 641975597}
   backgroundImage: {fileID: 2058902564}
   buttonPressed: 0
-  sliderSpeed: 0.7
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
@@ -2186,7 +2185,6 @@ MonoBehaviour:
   trickSlider: {fileID: 1683614224}
   backgroundImage: {fileID: 1419730504}
   buttonPressed: 0
-  sliderSpeed: 0.7
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
@@ -2431,6 +2429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowerBound: 0.4
   upperBound: 0.6
+  sliderSpeed: 0.7
 --- !u!4 &317021512
 Transform:
   m_ObjectHideFlags: 0
@@ -3226,7 +3225,6 @@ MonoBehaviour:
   trickSlider: {fileID: 943406744}
   backgroundImage: {fileID: 1017106145}
   buttonPressed: 0
-  sliderSpeed: 0.7
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
@@ -5221,7 +5219,6 @@ MonoBehaviour:
   trickSlider: {fileID: 1352816084}
   backgroundImage: {fileID: 790133238}
   buttonPressed: 0
-  sliderSpeed: 0.7
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
@@ -5441,7 +5438,6 @@ MonoBehaviour:
   trickSlider: {fileID: 729800820}
   backgroundImage: {fileID: 410967078}
   buttonPressed: 0
-  sliderSpeed: 0.7
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
@@ -5618,7 +5614,6 @@ MonoBehaviour:
   trickSlider: {fileID: 1500602059}
   backgroundImage: {fileID: 388582989}
   buttonPressed: 0
-  sliderSpeed: 0.7
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
@@ -5828,7 +5823,6 @@ MonoBehaviour:
   trickSlider: {fileID: 10212742}
   backgroundImage: {fileID: 1079214811}
   buttonPressed: 0
-  sliderSpeed: 0.7
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
@@ -6064,7 +6058,6 @@ MonoBehaviour:
   trickSlider: {fileID: 1254209156}
   backgroundImage: {fileID: 1694164667}
   buttonPressed: 0
-  sliderSpeed: 0.7
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
@@ -10970,7 +10963,6 @@ MonoBehaviour:
   trickSlider: {fileID: 1134576088}
   backgroundImage: {fileID: 442897792}
   buttonPressed: 0
-  sliderSpeed: 0.7
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
@@ -16580,7 +16572,6 @@ MonoBehaviour:
   trickSlider: {fileID: 1483189379}
   backgroundImage: {fileID: 1269907384}
   buttonPressed: 0
-  sliderSpeed: 0.7
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
@@ -17492,7 +17483,6 @@ MonoBehaviour:
   trickSlider: {fileID: 420926319}
   backgroundImage: {fileID: 1885760237}
   buttonPressed: 0
-  sliderSpeed: 0.7
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
@@ -24887,7 +24877,6 @@ MonoBehaviour:
   trickSlider: {fileID: 1728111989}
   backgroundImage: {fileID: 899609955}
   buttonPressed: 0
-  sliderSpeed: 0.7
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0

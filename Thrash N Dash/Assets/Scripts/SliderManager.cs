@@ -8,6 +8,7 @@ public class SliderManager : MonoBehaviour
     public float lowerBound = .4f; //the lower bound of the slider range
     public float upperBound = .6f; //the upper bound of the slider range that increases if the player gets the trick and decreases if they take sugar
     // Start is called before the first frame update
+    public float sliderSpeed = .7f;
     void Start()
     {
         

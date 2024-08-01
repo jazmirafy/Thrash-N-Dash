@@ -14,7 +14,6 @@ public class FirstCheckPoint : MonoBehaviour
     public Slider trickSlider;
     public Image backgroundImage;
     public bool buttonPressed = false;
-    public float sliderSpeed = .7f;
     public float fillAmount;
     private float elapsedTime = 0f; // Time elapsed since the start of the cycle
     private bool increasing = true; // Flag to indicate if the slider is increasing or decreasing
@@ -61,7 +60,7 @@ public class FirstCheckPoint : MonoBehaviour
         {
             elapsedTime += Time.deltaTime;
 
-            float t = elapsedTime / sliderSpeed;
+            float t = elapsedTime / sliderManager.sliderSpeed;
             t = Mathf.Clamp01(t);
 
             if (increasing)
@@ -90,7 +89,7 @@ public class FirstCheckPoint : MonoBehaviour
             }
         }
         //if the user pressed the S button, stop the trick slider at the value they stopped it at
-        if (Input.GetKeyDown(KeyCode.S) && !buttonPressed && sliderEnabled)
+        if ((Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.JoystickButton0)) && !buttonPressed && sliderEnabled)
         {
             buttonPressed = true; //set button pressed to true to indicate the user pressed S
             fillAmount = trickSlider.value;

@@ -11,6 +11,7 @@ public class SecondCheckPoint : MonoBehaviour
     public GameObject enemy;
     public SugarManager sugarManager;
     public SliderManager sliderManager;
+    public TrickJudgerController trickJudgerController;
     public float jumpDistance = 2f;
     //float incrementAmount = .01f;
     //public Image nextBackground;
@@ -31,13 +32,14 @@ public class SecondCheckPoint : MonoBehaviour
                 firstCheckPoint.trickSlider.gameObject.SetActive(false);
                 firstCheckPoint.sliderEnabled = false;
                 Debug.Log("slider has been set INactive");
-
+                StartCoroutine(trickJudgerController.ShowGoodTrick());
                 // Start the jump
+                //playerController.myAnim.SetFloat("Ollie", 1f);
                 player.GetComponent<JumpController>().StartJump(new Vector2(this.transform.position.x + jumpDistance, this.transform.position.y));
                 Debug.Log("TRICK ANIMATION PLACE HOLDER");
-
                 // After trick is done, set isTricking back to false
                 isTricking = false;
+                //playerController.myAnim.SetFloat("Ollie", -1f);
 
                 if (firstCheckPoint.accurateStop)
                 {
@@ -51,8 +53,10 @@ public class SecondCheckPoint : MonoBehaviour
                 firstCheckPoint.chances = 2;
                 firstCheckPoint.accurateStop = false;
             }
-            else if (!firstCheckPoint.accurateStop || !firstCheckPoint.buttonPressed)
+            else if (!firstCheckPoint.accurateStop)
             {
+                //player stumble animation
+                StartCoroutine(trickJudgerController.ShowBadTrick());
                 // If the player didn't hit the "green" area of the meter or didn't press the button in time, respawn them at the first checkpoint
                 player.transform.position = firstCheckPoint.checkPointPosition;
                 Debug.Log("player should have respawned at activator checkpoint");

@@ -47,7 +47,8 @@ public class FirstCheckPoint : MonoBehaviour
             else
             {
                 //game over (idk how to do gameover or kill the player yet)
-                Application.Quit(); //Quits application if player does not have chances left. Can change to switch to Lobby/mainMenu scene if needed
+
+                //Application.Quit(); //Quits application if player does not have chances left. Can change to switch to Lobby/mainMenu scene if needed
             }
 
         }

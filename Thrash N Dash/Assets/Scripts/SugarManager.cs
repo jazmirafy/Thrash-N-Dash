@@ -64,6 +64,7 @@ public class SugarManager : MonoBehaviour
         }
         //if the player runs out of health
         else{
+            
             //game over (idk how to do gameover or kill the player yet)
         }
     }

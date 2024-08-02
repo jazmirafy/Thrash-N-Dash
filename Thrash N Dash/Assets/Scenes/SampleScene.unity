@@ -624,6 +624,8 @@ MonoBehaviour:
   sliderManager: {fileID: 317021511}
   trickJudgerController: {fileID: 303634907}
   jumpDistance: 3
+  incrementAmount: 0.02
+  nextSlider: {fileID: 1567611315}
 --- !u!1 &48658630
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,6 +725,8 @@ MonoBehaviour:
   sliderManager: {fileID: 317021511}
   trickJudgerController: {fileID: 303634907}
   jumpDistance: 3
+  incrementAmount: 0.02
+  nextSlider: {fileID: 1475655765}
 --- !u!1 &56166442
 GameObject:
   m_ObjectHideFlags: 0
@@ -822,6 +826,8 @@ MonoBehaviour:
   sliderManager: {fileID: 317021511}
   trickJudgerController: {fileID: 303634907}
   jumpDistance: 3
+  incrementAmount: 0.02
+  nextSlider: {fileID: 65187857}
 --- !u!1 &65187857
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,7 +845,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &65187858
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2737,7 +2743,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &312080183
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2826,7 +2832,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowerBound: 0.4
   upperBound: 0.6
-  sliderSpeed: 0.7
+  sliderSpeed: 0.6
 --- !u!4 &317021512
 Transform:
   m_ObjectHideFlags: 0
@@ -3552,7 +3558,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &481000938
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4549,6 +4555,8 @@ MonoBehaviour:
   sliderManager: {fileID: 317021511}
   trickJudgerController: {fileID: 303634907}
   jumpDistance: 5
+  incrementAmount: 0.02
+  nextSlider: {fileID: 312080182}
 --- !u!4 &633664423
 Transform:
   m_ObjectHideFlags: 0
@@ -4673,7 +4681,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &692794806
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5028,6 +5036,8 @@ MonoBehaviour:
   sliderManager: {fileID: 317021511}
   trickJudgerController: {fileID: 303634907}
   jumpDistance: 5
+  incrementAmount: 0.02
+  nextSlider: {fileID: 2143463337}
 --- !u!1 &729800818
 GameObject:
   m_ObjectHideFlags: 0
@@ -5809,6 +5819,8 @@ MonoBehaviour:
   sliderManager: {fileID: 317021511}
   trickJudgerController: {fileID: 303634907}
   jumpDistance: 5
+  incrementAmount: 0.02
+  nextSlider: {fileID: 1080299816}
 --- !u!1 &816179670
 GameObject:
   m_ObjectHideFlags: 0
@@ -6002,7 +6014,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &830575685
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10627,6 +10639,8 @@ MonoBehaviour:
   sliderManager: {fileID: 317021511}
   trickJudgerController: {fileID: 303634907}
   jumpDistance: 5
+  incrementAmount: 0.02
+  nextSlider: {fileID: 0}
 --- !u!1 &892053073
 GameObject:
   m_ObjectHideFlags: 0
@@ -15934,6 +15948,8 @@ MonoBehaviour:
   sliderManager: {fileID: 317021511}
   trickJudgerController: {fileID: 303634907}
   jumpDistance: 3
+  incrementAmount: 0.02
+  nextSlider: {fileID: 692794805}
 --- !u!1 &1017106143
 GameObject:
   m_ObjectHideFlags: 0
@@ -16234,6 +16250,8 @@ MonoBehaviour:
   sliderManager: {fileID: 317021511}
   trickJudgerController: {fileID: 303634907}
   jumpDistance: 3
+  incrementAmount: 0.02
+  nextSlider: {fileID: 1771009114}
 --- !u!1 &1066529519
 GameObject:
   m_ObjectHideFlags: 0
@@ -16417,7 +16435,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1080299817
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16786,6 +16804,8 @@ MonoBehaviour:
   sliderManager: {fileID: 317021511}
   trickJudgerController: {fileID: 303634907}
   jumpDistance: 5
+  incrementAmount: 0.02
+  nextSlider: {fileID: 1402826179}
 --- !u!1 &1126465954
 GameObject:
   m_ObjectHideFlags: 0
@@ -18446,7 +18466,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1402826180
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18743,7 +18763,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1475655766
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18991,6 +19011,8 @@ MonoBehaviour:
   sliderManager: {fileID: 317021511}
   trickJudgerController: {fileID: 303634907}
   jumpDistance: 5
+  incrementAmount: 0.02
+  nextSlider: {fileID: 481000937}
 --- !u!1 &1490295923
 GameObject:
   m_ObjectHideFlags: 0
@@ -19348,7 +19370,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1567611316
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25010,7 +25032,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1771009115
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25747,7 +25769,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1909645046
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26193,6 +26215,8 @@ MonoBehaviour:
   sliderManager: {fileID: 317021511}
   trickJudgerController: {fileID: 303634907}
   jumpDistance: 3
+  incrementAmount: 0.02
+  nextSlider: {fileID: 1909645045}
 --- !u!4 &2006400232 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: 79d51ed8f9e714a65847aa59a7968481, type: 3}
@@ -30996,7 +31020,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2143463338
 RectTransform:
   m_ObjectHideFlags: 0

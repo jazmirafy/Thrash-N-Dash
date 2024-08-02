@@ -16,6 +16,8 @@ public class SugarManager : MonoBehaviour
     public bool sugarRushActive;
     float initialSpeed;
     public SliderManager sliderManager;
+    
+
 
     // Start is called before the first frame update
     void Start()
@@ -35,9 +37,6 @@ public class SugarManager : MonoBehaviour
         if((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.JoystickButton3)) && !sugarRushActive /*&& rushTime>=1*/){
             //Coroutine = allow to delay/modify methods and events until a time or condition is met
             StartCoroutine(SugarRush(rushTime));
-            //give a penalty for taking sugar by decreasing the target area
-            sliderManager.upperBound = Mathf.Max((sliderManager.upperBound - .01f), .45f); 
-            sliderManager.lowerBound = Mathf.Min((sliderManager.lowerBound + .01f), .40f);
         }
 
 
@@ -64,7 +63,7 @@ public class SugarManager : MonoBehaviour
         }
         //if the player runs out of health
         else{
-            
+
             //game over (idk how to do gameover or kill the player yet)
         }
     }

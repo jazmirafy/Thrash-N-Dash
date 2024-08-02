@@ -13,8 +13,9 @@ public class SecondCheckPoint : MonoBehaviour
     public SliderManager sliderManager;
     public TrickJudgerController trickJudgerController;
     public float jumpDistance = 2f;
-    //float incrementAmount = .01f;
-    //public Image nextBackground;
+    public float incrementAmount;
+    public GameObject nextSlider;
+    public static float totalIncrement = 0f;
 
 
 
@@ -44,16 +45,27 @@ public class SecondCheckPoint : MonoBehaviour
                 if (firstCheckPoint.accurateStop)
                 {
                     //give the incentive for doing the trick as expanding the target area
-                    sliderManager.upperBound = Mathf.Min((sliderManager.upperBound + .01f), .85f); 
-                    sliderManager.lowerBound = Mathf.Max((sliderManager.lowerBound - .01f), .20f);
-                    //sliderManager.StretchTop(nextBackground, incrementAmount);
+
+                    sliderManager.upperBound = Mathf.Min((sliderManager.upperBound + (incrementAmount/2)), .85f); 
+                    sliderManager.lowerBound = Mathf.Max((sliderManager.lowerBound - (incrementAmount/2)), .20f);
+                    totalIncrement += incrementAmount;
+                    sliderManager.StretchTop(nextSlider, totalIncrement);
+                    
+                }
+                if(sugarManager.sugarRushActive)
+                {
+                    //give a penalty for taking sugar by decreasing the target area
+                    sliderManager.upperBound = Mathf.Max((sliderManager.upperBound - (incrementAmount/2)), .45f); 
+                    sliderManager.lowerBound = Mathf.Min((sliderManager.lowerBound + (incrementAmount/2)), .40f);
+                    totalIncrement -= incrementAmount;
+                    sliderManager.StretchTop(nextSlider, totalIncrement);
                 }
 
                 // Refill the player's chances for the next obstacle
                 firstCheckPoint.chances = 2;
                 firstCheckPoint.accurateStop = false;
             }
-            else if (!firstCheckPoint.accurateStop)
+            else if (!firstCheckPoint.accurateStop || !firstCheckPoint.buttonPressed)
             {
                 //player stumble animation
                 StartCoroutine(trickJudgerController.ShowBadTrick());

@@ -74,14 +74,15 @@ public class FirstCheckPoint : MonoBehaviour
                 trickSlider.value = Mathf.Lerp(1f, 0f, t);
             }
             //if the handle is over the target area make the slider turn green
-            if(trickSlider.value >= sliderManager.lowerBound &&  trickSlider.value <= sliderManager.upperBound){
+            /*if(trickSlider.value >= sliderManager.lowerBound &&  trickSlider.value <= sliderManager.upperBound)
+            {
 
                 backgroundImage.color = Color.green;
             }
             else
             {
                 backgroundImage.color = Color.blue;
-            }
+            }*/
 
             if (t >= 1f)
             {

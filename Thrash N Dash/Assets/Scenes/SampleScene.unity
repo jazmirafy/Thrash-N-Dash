@@ -322,7 +322,7 @@ MonoBehaviour:
   maxHealth: 6
   healthAmount: 0
   speedBar: {fileID: 235914187}
-  rushTime: 6
+  rushTime: 5
   playerController: {fileID: 193056039}
   sugarRushActive: 0
   sliderManager: {fileID: 317021511}
@@ -1523,7 +1523,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 166562134}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -1687,7 +1687,7 @@ GameObject:
   - component: {fileID: 187330279}
   - component: {fileID: 187330280}
   - component: {fileID: 187330281}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -1836,7 +1836,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 193056034}
-  AIspeed: 8
   jumpHeight: 500
 --- !u!58 &187330280
 CircleCollider2D:
@@ -1909,7 +1908,7 @@ GameObject:
   - component: {fileID: 193056038}
   - component: {fileID: 193056040}
   - component: {fileID: 193056041}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -2231,6 +2230,33 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!50 &250002830
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250002825}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &274330419
 GameObject:
   m_ObjectHideFlags: 0
@@ -2956,7 +2982,7 @@ GameObject:
   - component: {fileID: 388582988}
   - component: {fileID: 388582990}
   - component: {fileID: 388582989}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3029,7 +3055,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 403927326}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3145,6 +3171,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1046073570}
+    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1046073572}
   m_SourcePrefab: {fileID: -8435245712485981826, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
 --- !u!1 &410967076
 GameObject:
@@ -3231,7 +3260,7 @@ GameObject:
   m_Component:
   - component: {fileID: 420926318}
   - component: {fileID: 420926319}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Slider B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3323,7 +3352,7 @@ GameObject:
   - component: {fileID: 449368077}
   - component: {fileID: 449368079}
   - component: {fileID: 449368078}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3832,6 +3861,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 956406994}
+    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 956406996}
   m_SourcePrefab: {fileID: -8435245712485981826, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
 --- !u!1 &519420028
 GameObject:
@@ -4049,6 +4081,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1904178348}
+    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1904178350}
   m_SourcePrefab: {fileID: -8435245712485981826, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
 --- !u!1 &530974844
 GameObject:
@@ -4320,7 +4355,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 590988390}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: checkGround
   m_TagString: Untagged
   m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
@@ -4505,7 +4540,7 @@ GameObject:
   - component: {fileID: 633664423}
   - component: {fileID: 633664421}
   - component: {fileID: 633664420}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Deactivator Checkpoint B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4770,7 +4805,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 703077941}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5162,7 +5197,7 @@ GameObject:
   - component: {fileID: 730309874}
   - component: {fileID: 730309872}
   - component: {fileID: 730309873}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Activator Checkpoint L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5246,7 +5281,7 @@ Transform:
   m_GameObject: {fileID: 730309871}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.37, y: 3.9656017, z: 1.0308807}
+  m_LocalPosition: {x: -11.6, y: 3.9656017, z: 1.0308807}
   m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5482,7 +5517,7 @@ GameObject:
   - component: {fileID: 765795696}
   - component: {fileID: 765795694}
   - component: {fileID: 765795697}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Activator Checkpoint A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5581,7 +5616,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 781377976}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Gate Jump L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5753,7 +5788,7 @@ GameObject:
   - component: {fileID: 807032167}
   - component: {fileID: 807032169}
   - component: {fileID: 807032168}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Deactivator Checkpoint A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5955,7 +5990,7 @@ GameObject:
   - component: {fileID: 823491407}
   - component: {fileID: 823491409}
   - component: {fileID: 823491408}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6030,7 +6065,7 @@ GameObject:
   - component: {fileID: 830575685}
   - component: {fileID: 830575687}
   - component: {fileID: 830575686}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Background A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10573,7 +10608,7 @@ GameObject:
   - component: {fileID: 890923093}
   - component: {fileID: 890923095}
   - component: {fileID: 890923094}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Deactivator Checkpoint L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10785,6 +10820,10 @@ PrefabInstance:
     - target: {fileID: -2253911629886400664, guid: 3a2aefa0cddcc4d93876b8058ee23b5e, type: 3}
       propertyPath: m_Name
       value: BananaPeel B
+      objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: 3a2aefa0cddcc4d93876b8058ee23b5e, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: 3a2aefa0cddcc4d93876b8058ee23b5e, type: 3}
       propertyPath: m_SortingOrder
@@ -11095,6 +11134,33 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!50 &956406996
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956406991}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &961721311
 GameObject:
   m_ObjectHideFlags: 0
@@ -16058,7 +16124,7 @@ GameObject:
   - component: {fileID: 1021972193}
   - component: {fileID: 1021972195}
   - component: {fileID: 1021972194}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16173,6 +16239,33 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!50 &1046073572
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046073567}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1055536395
 GameObject:
   m_ObjectHideFlags: 0
@@ -16284,7 +16377,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1066529520}
   - component: {fileID: 1066529521}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Slider L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16451,7 +16544,7 @@ GameObject:
   - component: {fileID: 1080299817}
   - component: {fileID: 1080299819}
   - component: {fileID: 1080299818}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Background B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16840,7 +16933,7 @@ GameObject:
   - component: {fileID: 1126465958}
   - component: {fileID: 1126465957}
   - component: {fileID: 1126465956}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17080,7 +17173,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 371d7f01a9ce8ec4b97107e9a0799bfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyChase: {fileID: 187330279}
   sliderManager: {fileID: 317021511}
 --- !u!4 &1156678438
 Transform:
@@ -17109,7 +17201,7 @@ GameObject:
   - component: {fileID: 1166162167}
   - component: {fileID: 1166162166}
   - component: {fileID: 1166162165}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17396,7 +17488,7 @@ GameObject:
   - component: {fileID: 1184510667}
   - component: {fileID: 1184510665}
   - component: {fileID: 1184510664}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Activator Checkpoint B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17498,7 +17590,7 @@ GameObject:
   - component: {fileID: 1205749486}
   - component: {fileID: 1205749485}
   - component: {fileID: 1205749484}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18407,7 +18499,7 @@ GameObject:
   - component: {fileID: 1398827886}
   - component: {fileID: 1398827888}
   - component: {fileID: 1398827887}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18779,7 +18871,7 @@ GameObject:
   - component: {fileID: 1475655766}
   - component: {fileID: 1475655768}
   - component: {fileID: 1475655767}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Background L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19044,7 +19136,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1490295924}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19082,7 +19174,7 @@ GameObject:
   - component: {fileID: 1492520306}
   - component: {fileID: 1492520308}
   - component: {fileID: 1492520307}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19156,7 +19248,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1500602058}
   - component: {fileID: 1500602059}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Slider A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19348,7 +19440,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1561874248}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24036,7 +24128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1651870836}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24074,7 +24166,7 @@ GameObject:
   - component: {fileID: 1660228047}
   - component: {fileID: 1660228049}
   - component: {fileID: 1660228048}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24402,7 +24494,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1696346512}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25492,6 +25584,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 250002828}
+    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 250002830}
   m_SourcePrefab: {fileID: -8435245712485981826, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
 --- !u!1 &1885760235
 GameObject:
@@ -25504,7 +25599,7 @@ GameObject:
   - component: {fileID: 1885760236}
   - component: {fileID: 1885760238}
   - component: {fileID: 1885760237}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25655,6 +25750,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BananaPeel A
       objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: 3a2aefa0cddcc4d93876b8058ee23b5e, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: 3a2aefa0cddcc4d93876b8058ee23b5e, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -25774,6 +25873,33 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!50 &1904178350
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904178345}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1909645045
 GameObject:
   m_ObjectHideFlags: 0
@@ -30850,7 +30976,7 @@ GameObject:
   - component: {fileID: 2083418157}
   - component: {fileID: 2083418159}
   - component: {fileID: 2083418158}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

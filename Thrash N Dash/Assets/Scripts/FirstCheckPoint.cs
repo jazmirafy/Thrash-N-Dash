@@ -25,7 +25,7 @@ public class FirstCheckPoint : MonoBehaviour
     void OnEnable()
     {
         buttonPressed = false;
-        Debug.Log("slider has been enabled, lerp should have started"); //let us know slider lerp should have started
+        //Debug.Log("slider has been enabled, lerp should have started"); //let us know slider lerp should have started
 
     }
 
@@ -42,7 +42,7 @@ public class FirstCheckPoint : MonoBehaviour
                 checkPointPosition = new Vector2((player.transform.position.x), player.transform.position.y);
                 trickSlider.gameObject.SetActive(true);//this activates the slider to lerp
                 sliderEnabled = true;
-                Debug.Log("slider has been set active"); //let us know slider should been set active
+                //Debug.Log("slider has been set active"); //let us know slider should been set active
             }
             else
             {
@@ -66,7 +66,7 @@ public class FirstCheckPoint : MonoBehaviour
 
             if (increasing)
             {
-                Debug.Log("slider has been enabled, lerp has started"); //let us know slider lerp started
+                //Debug.Log("slider has been enabled, lerp has started"); //let us know slider lerp started
                 trickSlider.value = Mathf.Lerp(0f, 1f, t);
             }
             else

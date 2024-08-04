@@ -16,6 +16,7 @@ public class SecondCheckPoint : MonoBehaviour
     public float incrementAmount;
     public GameObject nextSlider;
     public static float totalIncrement = 0f;
+    float speedIncreaser = .1f;
 
 
 
@@ -41,6 +42,8 @@ public class SecondCheckPoint : MonoBehaviour
                 // After trick is done, set isTricking back to false
                 isTricking = false;
                 //playerController.myAnim.SetFloat("Ollie", -1f);
+                EnemyChase.AIspeed += speedIncreaser; //increase the enemy speed after the player passes an obstacle
+                Debug.Log("AIspeed value: " + EnemyChase.AIspeed);
 
                 if (firstCheckPoint.accurateStop)
                 {

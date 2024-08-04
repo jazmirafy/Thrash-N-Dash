@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyChase : MonoBehaviour
 {   
     public GameObject target;
-    public float AIspeed;
+    public static float AIspeed = 8f;
     public float jumpHeight;
     float distance;
     bool facingRight;

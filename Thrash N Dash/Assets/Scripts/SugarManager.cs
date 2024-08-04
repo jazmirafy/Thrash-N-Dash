@@ -10,7 +10,7 @@ public class SugarManager : MonoBehaviour
     public float healthAmount;
     public Image speedBar;
     //rushTime is how long the sugar rush lasts
-    public float rushTime;
+    public float rushTime = 5;
     public playerController playerController;
     //allows sugar rush cooldown
     public bool sugarRushActive;
@@ -48,7 +48,7 @@ public class SugarManager : MonoBehaviour
         healthBar.fillAmount = healthAmount/ maxHealth;
         if(healthAmount >0){
             sugarRushActive = true;
-            playerController.maxSpeed += 2;
+            playerController.maxSpeed *= 2;
             //double the speed bar's size since the player's speed doubled
             speedBar.fillAmount *= 2;
             //yield return tells the code to do the above until condition is met (waitforseconds is the condtion) always put new before the condition
@@ -57,7 +57,7 @@ public class SugarManager : MonoBehaviour
             //rushTime is the duration of the sugar rush. the sugar rush duration goes down each time you take another sugar
             rushTime = Mathf.Max((rushTime-1), 1); //mathf.max makes sure rush time does not go below 1
             //decrease the speedbar length, speed, and set the sugar rush active back to false 
-            playerController.maxSpeed -=3;
+            playerController.maxSpeed = (playerController.maxSpeed/2) - 1;
             speedBar.fillAmount = (playerController.maxSpeed/initialSpeed)/2;
             sugarRushActive = false;
         }

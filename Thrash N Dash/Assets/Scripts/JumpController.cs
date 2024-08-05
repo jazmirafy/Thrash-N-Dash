@@ -21,7 +21,7 @@ public class JumpController : MonoBehaviour
     public void StartJump( Vector2 landingPos, string animation)
     {
         //do trick animation
-        animator.SetBool(animation, true);
+        animator.SetTrigger(animation);
         //do jump
         startPosition = transform.position;
         targetPosition = landingPos;

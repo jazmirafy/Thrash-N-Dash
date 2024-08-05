@@ -43,13 +43,11 @@ public class SecondCheckPoint : MonoBehaviour
                 StartCoroutine(trickJudgerController.ShowGoodTrick());
                 if(firstCheckPoint.clickedOllie){
                 player.GetComponent<JumpController>().StartJump(new Vector2(this.transform.position.x + jumpDistance, this.transform.position.y), "doingOllie");
-                /*animator.SetBool("doingOllie", false);
-                firstCheckPoint.clickedOllie = false;*/
+                firstCheckPoint.clickedOllie = false;
                 }
                 else if(firstCheckPoint.clickedKickFlip){
                 player.GetComponent<JumpController>().StartJump(new Vector2(this.transform.position.x + jumpDistance, this.transform.position.y), "doingKickflip");
-                /*animator.SetBool("doingKickflip", false);
-                firstCheckPoint.clickedKickFlip = false;*/
+                firstCheckPoint.clickedKickFlip = false;
                 }
                 isTricking = false;
                 EnemyChase.AIspeed += speedIncreaser; //increase the enemy speed after the player passes an obstacle
@@ -96,6 +94,15 @@ public class SecondCheckPoint : MonoBehaviour
                 firstCheckPoint.buttonPressed = false; // Reset first checkpoint so slider starts moving again
                 firstCheckPoint.chances--; // Take away a chance
             }
-        }
+
+            /*IIEnumerator ResetTrick(string animation)
+            {
+
+                yield return new WaitForSeconds(1);
+                animator.SetBool(animation, false);
+
+                
+            }*/
+        }   
     }
 }

@@ -1307,6 +1307,8 @@ MonoBehaviour:
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
+  clickedOllie: 0
+  clickedKickFlip: 0
 --- !u!61 &109782970
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2099,6 +2101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca3790598877405459d72c8da8d55f78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 193056038}
   landingPosition: {fileID: 0}
   jumpHeight: 1
   jumpDuration: 0.5
@@ -2639,6 +2642,8 @@ MonoBehaviour:
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
+  clickedOllie: 0
+  clickedKickFlip: 0
 --- !u!61 &304291105
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3457,6 +3462,8 @@ MonoBehaviour:
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
+  clickedOllie: 0
+  clickedKickFlip: 0
 --- !u!61 &451279344
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5227,6 +5234,8 @@ MonoBehaviour:
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
+  clickedOllie: 0
+  clickedKickFlip: 0
 --- !u!61 &730309873
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5446,6 +5455,8 @@ MonoBehaviour:
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
+  clickedOllie: 0
+  clickedKickFlip: 0
 --- !u!61 &739093560
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5547,6 +5558,8 @@ MonoBehaviour:
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
+  clickedOllie: 0
+  clickedKickFlip: 0
 --- !u!4 &765795696
 Transform:
   m_ObjectHideFlags: 0
@@ -5681,6 +5694,8 @@ MonoBehaviour:
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
+  clickedOllie: 0
+  clickedKickFlip: 0
 --- !u!61 &798405420
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5919,6 +5934,8 @@ MonoBehaviour:
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
+  clickedOllie: 0
+  clickedKickFlip: 0
 --- !u!61 &816179672
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10929,6 +10946,8 @@ MonoBehaviour:
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
+  clickedOllie: 0
+  clickedKickFlip: 0
 --- !u!61 &908101491
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16649,6 +16668,8 @@ MonoBehaviour:
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
+  clickedOllie: 0
+  clickedKickFlip: 0
 --- !u!61 &1087272373
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17563,6 +17584,8 @@ MonoBehaviour:
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
+  clickedOllie: 0
+  clickedKickFlip: 0
 --- !u!4 &1184510667
 Transform:
   m_ObjectHideFlags: 0
@@ -25245,6 +25268,8 @@ MonoBehaviour:
   fillAmount: 1
   sliderEnabled: 0
   accurateStop: 0
+  clickedOllie: 0
+  clickedKickFlip: 0
 --- !u!61 &1772540526
 BoxCollider2D:
   m_ObjectHideFlags: 0

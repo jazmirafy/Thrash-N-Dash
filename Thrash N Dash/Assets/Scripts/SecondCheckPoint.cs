@@ -17,6 +17,12 @@ public class SecondCheckPoint : MonoBehaviour
     public GameObject nextSlider;
     public static float totalIncrement = 0f;
     float speedIncreaser = .1f;
+    public Animator animator;
+
+    void Start()
+    {
+        animator  = player.GetComponent<Animator>();
+    }
 
 
 
@@ -35,13 +41,17 @@ public class SecondCheckPoint : MonoBehaviour
                 firstCheckPoint.sliderEnabled = false;
                 Debug.Log("slider has been set INactive");
                 StartCoroutine(trickJudgerController.ShowGoodTrick());
-                // Start the jump
-                //playerController.myAnim.SetFloat("Ollie", 1f);
-                player.GetComponent<JumpController>().StartJump(new Vector2(this.transform.position.x + jumpDistance, this.transform.position.y));
-                Debug.Log("TRICK ANIMATION PLACE HOLDER");
-                // After trick is done, set isTricking back to false
+                if(firstCheckPoint.clickedOllie){
+                player.GetComponent<JumpController>().StartJump(new Vector2(this.transform.position.x + jumpDistance, this.transform.position.y), "doingOllie");
+                /*animator.SetBool("doingOllie", false);
+                firstCheckPoint.clickedOllie = false;*/
+                }
+                else if(firstCheckPoint.clickedKickFlip){
+                player.GetComponent<JumpController>().StartJump(new Vector2(this.transform.position.x + jumpDistance, this.transform.position.y), "doingKickflip");
+                /*animator.SetBool("doingKickflip", false);
+                firstCheckPoint.clickedKickFlip = false;*/
+                }
                 isTricking = false;
-                //playerController.myAnim.SetFloat("Ollie", -1f);
                 EnemyChase.AIspeed += speedIncreaser; //increase the enemy speed after the player passes an obstacle
                 Debug.Log("AIspeed value: " + EnemyChase.AIspeed);
 

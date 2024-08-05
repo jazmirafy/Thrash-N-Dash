@@ -17,12 +17,15 @@ public class playerController : MonoBehaviour
     public LayerMask groundLayer;
     public Transform groundCheck;
     public float jumpHeight;
+    public GameObject player;
 
     // Start is called before the first frame update
     void Start()
     {
         myRB = GetComponent<Rigidbody2D>();
         myAnim = GetComponent<Animator>();
+        player = this.gameObject;
+
         facingRight = true; //user starts off facing to the right
 
 
@@ -39,6 +42,11 @@ public class playerController : MonoBehaviour
             myRB.AddForce(Vector2.up * jumpHeight); //this way of making the player jump can be more memory and performance efficient because it doesnt have to create a new vector 2 instance for each jump
             //myRB.AddForce(new Vector2(0, jumpHeight));
         }
+        /*if(player.transform.position.y < 0)
+        {
+            player.transform.position = new Vector3(player.transform.position.x, 0, player.transform.position.z);
+         
+        }*/
     }
     //called consistently for things that involve rigidbody physics, movement, interaction etc
     void FixedUpdate()

@@ -626,6 +626,7 @@ MonoBehaviour:
   jumpDistance: 3
   incrementAmount: 0.02
   nextSlider: {fileID: 1567611315}
+  animator: {fileID: 0}
 --- !u!1 &48658630
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,6 +728,7 @@ MonoBehaviour:
   jumpDistance: 3
   incrementAmount: 0.02
   nextSlider: {fileID: 1475655765}
+  animator: {fileID: 0}
 --- !u!1 &56166442
 GameObject:
   m_ObjectHideFlags: 0
@@ -828,6 +830,7 @@ MonoBehaviour:
   jumpDistance: 3
   incrementAmount: 0.02
   nextSlider: {fileID: 65187857}
+  animator: {fileID: 0}
 --- !u!1 &65187857
 GameObject:
   m_ObjectHideFlags: 0
@@ -2054,6 +2057,7 @@ MonoBehaviour:
     m_Bits: 64
   groundCheck: {fileID: 590988390}
   jumpHeight: 10
+  player: {fileID: 0}
 --- !u!58 &193056040
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2086,7 +2090,7 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.1, y: 0.01}
+  m_Offset: {x: 0.1, y: 0}
   serializedVersion: 2
   m_Radius: 0.32
 --- !u!114 &193056041
@@ -4621,6 +4625,7 @@ MonoBehaviour:
   jumpDistance: 5
   incrementAmount: 0.02
   nextSlider: {fileID: 312080182}
+  animator: {fileID: 0}
 --- !u!4 &633664423
 Transform:
   m_ObjectHideFlags: 0
@@ -5102,6 +5107,7 @@ MonoBehaviour:
   jumpDistance: 5
   incrementAmount: 0.02
   nextSlider: {fileID: 2143463337}
+  animator: {fileID: 0}
 --- !u!1 &729800818
 GameObject:
   m_ObjectHideFlags: 0
@@ -5893,6 +5899,7 @@ MonoBehaviour:
   jumpDistance: 5
   incrementAmount: 0.02
   nextSlider: {fileID: 1080299816}
+  animator: {fileID: 0}
 --- !u!1 &816179670
 GameObject:
   m_ObjectHideFlags: 0
@@ -10715,6 +10722,7 @@ MonoBehaviour:
   jumpDistance: 5
   incrementAmount: 0.02
   nextSlider: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!1 &892053073
 GameObject:
   m_ObjectHideFlags: 0
@@ -16057,6 +16065,7 @@ MonoBehaviour:
   jumpDistance: 3
   incrementAmount: 0.02
   nextSlider: {fileID: 692794805}
+  animator: {fileID: 0}
 --- !u!1 &1017106143
 GameObject:
   m_ObjectHideFlags: 0
@@ -16386,6 +16395,7 @@ MonoBehaviour:
   jumpDistance: 3
   incrementAmount: 0.02
   nextSlider: {fileID: 1771009114}
+  animator: {fileID: 0}
 --- !u!1 &1066529519
 GameObject:
   m_ObjectHideFlags: 0
@@ -16942,6 +16952,7 @@ MonoBehaviour:
   jumpDistance: 5
   incrementAmount: 0.02
   nextSlider: {fileID: 1402826179}
+  animator: {fileID: 0}
 --- !u!1 &1126465954
 GameObject:
   m_ObjectHideFlags: 0
@@ -18811,6 +18822,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1428423002}
   m_CullTransparentMesh: 1
+--- !u!1 &1432198319
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1432198321}
+  - component: {fileID: 1432198320}
+  m_Layer: 0
+  m_Name: Demo Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1432198320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432198319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f705732ea408ede479e674d6733f2bd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeManager: {fileID: 1614147834}
+--- !u!4 &1432198321
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432198319}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -234.48924, y: 3.7977629, z: 0.9533085}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1439159890
 GameObject:
   m_ObjectHideFlags: 0
@@ -19150,6 +19206,7 @@ MonoBehaviour:
   jumpDistance: 5
   incrementAmount: 0.02
   nextSlider: {fileID: 481000937}
+  animator: {fileID: 0}
 --- !u!1 &1490295923
 GameObject:
   m_ObjectHideFlags: 0
@@ -23968,6 +24025,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1595814269}
   m_CullTransparentMesh: 1
+--- !u!1 &1614147833
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1614147835}
+  - component: {fileID: 1614147834}
+  m_Layer: 0
+  m_Name: Time Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1614147834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614147833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdb51a43e6a30594d988738685ff55e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slowDownFactor: 0.05
+  slowDownLength: 3
+--- !u!4 &1614147835
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614147833}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -234.48924, y: 3.7977629, z: 0.9533085}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1620779798
 GameObject:
   m_ObjectHideFlags: 0
@@ -26390,6 +26493,7 @@ MonoBehaviour:
   jumpDistance: 3
   incrementAmount: 0.02
   nextSlider: {fileID: 1909645045}
+  animator: {fileID: 0}
 --- !u!4 &2006400232 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: 79d51ed8f9e714a65847aa59a7968481, type: 3}
@@ -31264,6 +31368,8 @@ SceneRoots:
   - {fileID: 963645934}
   - {fileID: 11371176}
   - {fileID: 317021512}
+  - {fileID: 1614147835}
+  - {fileID: 1432198321}
   - {fileID: 1295951070}
   - {fileID: 2010111635}
   - {fileID: 1156678438}

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class JumpController : MonoBehaviour
 {
+    public Animator animator;
     public Transform landingPosition; // Set this to the desired landing position in the inspector
     private Vector2 startPosition;
     private Vector2 targetPosition;
@@ -15,14 +16,19 @@ public class JumpController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
-    public void StartJump( Vector2 landingPos)
+    public void StartJump( Vector2 landingPos, string animation)
     {
+        //do trick animation
+        animator.SetBool(animation, true);
+        //do jump
         startPosition = transform.position;
         targetPosition = landingPos;
         isJumping = true;
         jumpProgress = 0f;
+
+        
     }
 
     // Update is called once per frame

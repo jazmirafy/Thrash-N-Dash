@@ -19,11 +19,15 @@ public class FirstCheckPoint : MonoBehaviour
     private bool increasing = true; // Flag to indicate if the slider is increasing or decreasing
     public bool sliderEnabled = false; //bool to confirm slider is enabled and ready for Key Press
     public bool accurateStop; //bool to check that the slider was stopped within the correct range
+    public bool clickedOllie = false;
+    public bool clickedKickFlip = false;
 
 
     // OnEnable is called every time the game object is activated
     void OnEnable()
     {
+        clickedOllie = false;
+        clickedKickFlip = false;
         buttonPressed = false;
         //Debug.Log("slider has been enabled, lerp should have started"); //let us know slider lerp should have started
 
@@ -89,19 +93,31 @@ public class FirstCheckPoint : MonoBehaviour
                 elapsedTime = 0f;
                 increasing = !increasing;
             }
+            //check to see if the user clicked a button that is assigned to a trick, and then stop the trick meter and changes the bool accordingly
+            CheckTrick(KeyCode.Q, KeyCode.JoystickButton1, ref clickedOllie);
+            CheckTrick(KeyCode.Z, KeyCode.JoystickButton2, ref clickedKickFlip);
         }
-        //if the user pressed the S button, stop the trick slider at the value they stopped it at
-        if ((Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.JoystickButton0)) && !buttonPressed && sliderEnabled)
+
+
+    }
+    void CheckTrick(KeyCode key, KeyCode joystickKey, ref bool clickedTrick)
+    {
+        if ((Input.GetKeyDown(key) || Input.GetKeyDown(joystickKey)) && !buttonPressed && sliderEnabled)
         {
-            buttonPressed = true; //set button pressed to true to indicate the user pressed S
-            fillAmount = trickSlider.value;
-            trickSlider.value = fillAmount;
-            //if the user hits between the lower and upper bound, set accurate stop to tru
+            clickedTrick = true;
+            buttonPressed = true;
+            fillAmount = trickSlider.value; 
+            trickSlider.value = fillAmount;//stop the trick slider at the value it currently is when they pressed the button
+
+            //determine if the user stopped accurately (within the "green area" bounds)
             if (fillAmount >= sliderManager.lowerBound && fillAmount <= sliderManager.upperBound)
+            {
                 accurateStop = true;
+            }
             else
+            {
                 accurateStop = false;
-            return;
+            }
         }
     }
 }

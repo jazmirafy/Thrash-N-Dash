@@ -16,7 +16,7 @@ public class SecondCheckPoint : MonoBehaviour
     public float incrementAmount;
     public GameObject nextSlider;
     public static float totalIncrement = 0f;
-    float speedIncreaser = .1f;
+    float speedIncreaser = .05f;
     public Animator animator;
 
     void Start()
@@ -45,7 +45,7 @@ public class SecondCheckPoint : MonoBehaviour
                 player.GetComponent<JumpController>().StartJump(new Vector2(this.transform.position.x + jumpDistance, this.transform.position.y), "doingOllie");
                 firstCheckPoint.clickedOllie = false;
                 }
-                else if(firstCheckPoint.clickedKickFlip){
+                else if(firstCheckPoint.clickedKickFlip || sugarManager.sugarRushActive){
                 player.GetComponent<JumpController>().StartJump(new Vector2(this.transform.position.x + jumpDistance, this.transform.position.y), "doingKickflip");
                 firstCheckPoint.clickedKickFlip = false;
                 }
@@ -95,14 +95,6 @@ public class SecondCheckPoint : MonoBehaviour
                 firstCheckPoint.chances--; // Take away a chance
             }
 
-            /*IIEnumerator ResetTrick(string animation)
-            {
-
-                yield return new WaitForSeconds(1);
-                animator.SetBool(animation, false);
-
-                
-            }*/
         }   
     }
 }

@@ -42,7 +42,6 @@ public class EnemyChase : MonoBehaviour
         //keeping the y value of the vector 0 so the enemy only moves horizontally
         transform.position = Vector2.MoveTowards(transform.position, new Vector2(target.transform.position.x, 0), AIspeed * Time.deltaTime);
 
-
     }
 
   

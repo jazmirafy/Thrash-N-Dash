@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 669d103e8976c4ccc90bed714591eead
+guid: 8ccb42f955ef24d29b5441c09deabe5c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,12 +97,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: StoreOwnerRun_0
+      name: Ollie_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 111
+        width: 96
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -111,19 +111,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68f5838475b1c4b8cadf6116bc229a52
-      internalID: 1914367646
+      spriteID: f305d0ba3a471442ba8295ed5cc9b824
+      internalID: 1255925626
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StoreOwnerRun_1
+      name: Ollie_1
       rect:
         serializedVersion: 2
-        x: 111
+        x: 96
         y: 0
-        width: 111
+        width: 96
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -132,19 +132,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3dbf9e0341a64cbd8eb70639eb86b29
-      internalID: 917497328
+      spriteID: 8a9e54031d3b44a43bc7fc812689b96f
+      internalID: 247296604
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StoreOwnerRun_2
+      name: Ollie_2
       rect:
         serializedVersion: 2
-        x: 222
+        x: 192
         y: 0
-        width: 111
+        width: 96
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -153,19 +153,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 064d1c03e6c864898b52cc28c5f22a57
-      internalID: 1740780138
+      spriteID: 572db88a5a14b42068f2fe861e3ecb47
+      internalID: -623660869
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StoreOwnerRun_3
+      name: Ollie_3
       rect:
         serializedVersion: 2
-        x: 333
+        x: 288
         y: 0
-        width: 111
+        width: 96
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -174,19 +174,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ee5db3d8c49448aea1f6d3cebc4c763
-      internalID: 1633985514
+      spriteID: a4ab721417b0f49bab145f80a4f74a1d
+      internalID: 1391990147
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StoreOwnerRun_4
+      name: Ollie_4
       rect:
         serializedVersion: 2
-        x: 444
+        x: 384
         y: 0
-        width: 111
+        width: 96
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -195,19 +195,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e409e885d8054f5aa00c0fda0ec5471
-      internalID: 69755432
+      spriteID: a1b37acf15d524c969f7166a387fbdd5
+      internalID: -12716162
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StoreOwnerRun_5
+      name: Ollie_5
       rect:
         serializedVersion: 2
-        x: 555
+        x: 480
         y: 0
-        width: 111
+        width: 96
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -216,19 +216,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1c6d4c6e86514e638dc9e08096f8f2d
-      internalID: -2127413982
+      spriteID: d5b23bbcc54a6486a963a8d2439820d0
+      internalID: -1063334581
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StoreOwnerRun_6
+      name: Ollie_6
       rect:
         serializedVersion: 2
-        x: 666
+        x: 576
         y: 0
-        width: 111
+        width: 96
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -237,19 +237,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5afada84a02943f296bd08c1987df53
-      internalID: 994196376
+      spriteID: 4be125639e6d641b5bddb20c932260b9
+      internalID: -2109535851
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StoreOwnerRun_7
+      name: Ollie_7
       rect:
         serializedVersion: 2
-        x: 777
+        x: 672
         y: 0
-        width: 111
+        width: 96
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -258,19 +258,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b216121899c646a2aa24631acb26aa1
-      internalID: -632003792
+      spriteID: 98be02b91bcf74cc99c506fabad479d8
+      internalID: -126319966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StoreOwnerRun_8
+      name: Ollie_8
       rect:
         serializedVersion: 2
-        x: 888
+        x: 768
         y: 0
-        width: 111
+        width: 96
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -279,19 +279,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: baf25d3124027463abd252a2ae3900a1
-      internalID: -176779651
+      spriteID: 61ee1d3dd8d1645bf8b9d0f000d36723
+      internalID: 1930145816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StoreOwnerRun_9
+      name: Ollie_9
       rect:
         serializedVersion: 2
-        x: 999
+        x: 864
         y: 0
-        width: 111
+        width: 96
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -300,19 +300,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c69e87fbedccc499b847ab79e5cf742d
-      internalID: 1881200931
+      spriteID: d2d7866186892427abd5c333ba11198d
+      internalID: 1207165952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StoreOwnerRun_10
+      name: Ollie_10
       rect:
         serializedVersion: 2
-        x: 1110
+        x: 960
         y: 0
-        width: 111
+        width: 96
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -321,19 +321,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 427fe2b10a79a4c4fa8c771692f8cd54
-      internalID: 663576422
+      spriteID: fbac8346d25f941e29cd4995f5626b99
+      internalID: -947110309
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StoreOwnerRun_11
+      name: Ollie_11
       rect:
         serializedVersion: 2
-        x: 1221
+        x: 1056
         y: 0
-        width: 111
+        width: 96
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -342,19 +342,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f609742873344fa38ffe3521484d191
-      internalID: 1445692961
+      spriteID: a44e773a4d3d74cf5924c5557f17a196
+      internalID: -148462216
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StoreOwnerRun_12
+      name: Ollie_12
       rect:
         serializedVersion: 2
-        x: 1332
+        x: 1152
         y: 0
-        width: 111
+        width: 96
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -363,19 +363,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39e611aabae6943218f2326c13d7cb1d
-      internalID: -797958408
+      spriteID: 39e1e60f8ea4840a992d56a661282fe0
+      internalID: 1098921236
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StoreOwnerRun_13
+      name: Ollie_13
       rect:
         serializedVersion: 2
-        x: 1443
+        x: 1248
         y: 0
-        width: 111
+        width: 96
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -384,19 +384,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1df20d7844ae646528efa74406c82ca0
-      internalID: 1076491835
+      spriteID: 531fc53bae8244088926cf110893e6f9
+      internalID: 1281097563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StoreOwnerRun_14
+      name: Ollie_14
       rect:
         serializedVersion: 2
-        x: 1554
+        x: 1344
         y: 0
-        width: 111
+        width: 96
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -405,19 +405,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 060f64aee5b0a42a09a95ed0cc6af1c2
-      internalID: -817410958
+      spriteID: 6719adb85309d40eb806817032f9753b
+      internalID: -1995904681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StoreOwnerRun_15
+      name: Ollie_15
       rect:
         serializedVersion: 2
-        x: 1665
+        x: 1440
         y: 0
-        width: 111
+        width: 96
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -426,8 +426,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b688439043904e979b459462bebf9a7
-      internalID: 802400611
+      spriteID: 5d7b1a43872664a6da24860f98513e63
+      internalID: 1002187601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ollie_16
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 96
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78ad5c12b073b4aa6b95969d7b3edd37
+      internalID: 263333337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ollie_17
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 0
+        width: 96
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76fc59f5ffd342779fa5d1fae0dbd41
+      internalID: -814296032
       vertices: []
       indices: 
       edges: []
@@ -443,22 +485,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      StoreOwnerRun_0: 1914367646
-      StoreOwnerRun_1: 917497328
-      StoreOwnerRun_10: 663576422
-      StoreOwnerRun_11: 1445692961
-      StoreOwnerRun_12: -797958408
-      StoreOwnerRun_13: 1076491835
-      StoreOwnerRun_14: -817410958
-      StoreOwnerRun_15: 802400611
-      StoreOwnerRun_2: 1740780138
-      StoreOwnerRun_3: 1633985514
-      StoreOwnerRun_4: 69755432
-      StoreOwnerRun_5: -2127413982
-      StoreOwnerRun_6: 994196376
-      StoreOwnerRun_7: -632003792
-      StoreOwnerRun_8: -176779651
-      StoreOwnerRun_9: 1881200931
+      Ollie_0: 1255925626
+      Ollie_1: 247296604
+      Ollie_10: -947110309
+      Ollie_11: -148462216
+      Ollie_12: 1098921236
+      Ollie_13: 1281097563
+      Ollie_14: -1995904681
+      Ollie_15: 1002187601
+      Ollie_16: 263333337
+      Ollie_17: -814296032
+      Ollie_2: -623660869
+      Ollie_3: 1391990147
+      Ollie_4: -12716162
+      Ollie_5: -1063334581
+      Ollie_6: -2109535851
+      Ollie_7: -126319966
+      Ollie_8: 1930145816
+      Ollie_9: 1207165952
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

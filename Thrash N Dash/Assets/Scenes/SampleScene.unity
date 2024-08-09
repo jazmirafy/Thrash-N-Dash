@@ -1988,15 +1988,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 687560824, guid: e18b4e3f76c534eeabc507f1ddc9bcd3, type: 3}
+  m_Sprite: {fileID: 947861871, guid: a7ff8264d381941778be815db57e3184, type: 3}
   m_Color: {r: 1, g: 0.9882353, b: 0.94509804, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.96, y: 0.96}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &193056037
@@ -4088,6 +4088,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7878350319992209165, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 56166443}
+    - targetCorrespondingSourceObject: {fileID: 7878350319992209165, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 735496595}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: 4a0a0cc25ad0046f4b96bcdfa93fb26b, type: 3}
       insertIndex: -1
@@ -5398,7 +5401,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 530974845}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1904178347}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -31656,7 +31659,6 @@ SceneRoots:
   - {fileID: 2010111635}
   - {fileID: 1156678438}
   - {fileID: 303634911}
-  - {fileID: 735496595}
   - {fileID: 1897849543}
   - {fileID: 905935801}
   - {fileID: 169344142}

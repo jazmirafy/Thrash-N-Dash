@@ -16,6 +16,8 @@ public class SugarManager : MonoBehaviour
     public bool sugarRushActive;
     float initialSpeed;
     public SliderManager sliderManager;
+
+    public Image sugarImage;
     
 
 
@@ -34,7 +36,7 @@ public class SugarManager : MonoBehaviour
     void Update()
     { 
         //if the player takes the sugar by pressing the Q key, they lose health and gain speed
-        if((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.JoystickButton3)) && !sugarRushActive /*&& rushTime>=1*/){
+        if((Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.JoystickButton3)) && !sugarRushActive /*&& rushTime>=1*/){
             //Coroutine = allow to delay/modify methods and events until a time or condition is met
             StartCoroutine(SugarRush(rushTime));
         }
@@ -46,6 +48,7 @@ public class SugarManager : MonoBehaviour
         //decrease player health and decrease the length of the green part of the health bar
         healthAmount -= 1; // if the player eats sugar their health goes down by 2
         healthBar.fillAmount = healthAmount/ maxHealth;
+        sugarImage.color = Color.magenta;
         if(healthAmount >0){
             sugarRushActive = true;
             playerController.maxSpeed *= 2;
@@ -53,6 +56,7 @@ public class SugarManager : MonoBehaviour
             speedBar.fillAmount *= 2;
             //yield return tells the code to do the above until condition is met (waitforseconds is the condtion) always put new before the condition
             yield return new WaitForSeconds(currentRushTime);
+            sugarImage.color = Color.white;
             //each time the player has a sugar rush, the next rush is gonna be 1 second slower to represent gaining tolerance to an addictive substance
             //rushTime is the duration of the sugar rush. the sugar rush duration goes down each time you take another sugar
             rushTime = Mathf.Max((rushTime-1), 1); //mathf.max makes sure rush time does not go below 1

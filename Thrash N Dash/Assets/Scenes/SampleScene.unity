@@ -326,6 +326,7 @@ MonoBehaviour:
   playerController: {fileID: 193056039}
   sugarRushActive: 0
   sliderManager: {fileID: 317021511}
+  sugarImage: {fileID: 1428423004}
 --- !u!4 &11371176
 Transform:
   m_ObjectHideFlags: 0

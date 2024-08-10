@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class EnemyChase : MonoBehaviour
 {   
     public GameObject target;
     public static float AIspeed = 8f;
     public float jumpHeight;
-    float distance;
     bool facingRight;
     Rigidbody2D rb;
 
@@ -51,5 +51,11 @@ public class EnemyChase : MonoBehaviour
         Vector3 theScale = transform.localScale; //gets the local scale the sprite has now, and assigns it to a variable
         theScale.x *= -1; //multiplies the x value of the scale to -1 (flip the x coordinate because you want to flip it horizontally)
         transform.localScale = theScale; // takes the value of theScale variable (the flipped variable) and assigns it to the sprites actual local scale
+    }
+    void OnTriggerEnter2D(Collider2D collider){
+        if(collider.tag == "Player"){
+            TransitionManager.ResetVariables();
+            SceneManager.LoadScene("LoseChances");
+        }
     }
 }

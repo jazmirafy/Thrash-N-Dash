@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class SugarManager : MonoBehaviour
 {
     public Image healthBar;
@@ -18,6 +18,8 @@ public class SugarManager : MonoBehaviour
     public SliderManager sliderManager;
 
     public Image sugarImage;
+    public Image controllerButton;
+    public Image keyboardButton;
     
 
 
@@ -28,13 +30,21 @@ public class SugarManager : MonoBehaviour
         healthAmount = maxHealth;
         sugarRushActive = false;
         initialSpeed = playerController.maxSpeed;
-        
+         if(InputManager.usingController){
+                controllerButton.gameObject.SetActive(true);
+                keyboardButton.gameObject.SetActive(false);
+            }
+        else if(InputManager.usingKeyboard){
+                keyboardButton.gameObject.SetActive(true);
+                controllerButton.gameObject.SetActive(false);
+            }       
 
     }
 
     // Update is called once per frame
     void Update()
     { 
+
         //if the player takes the sugar by pressing the Q key, they lose health and gain speed
         if((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.JoystickButton3)) && !sugarRushActive /*&& rushTime>=1*/){
             //Coroutine = allow to delay/modify methods and events until a time or condition is met
@@ -67,7 +77,7 @@ public class SugarManager : MonoBehaviour
         }
         //if the player runs out of health
         else{
-
+            SceneManager.LoadScene("LoseHealth");
             //game over (idk how to do gameover or kill the player yet)
         }
     }

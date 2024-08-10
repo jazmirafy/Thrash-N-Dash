@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class FirstCheckPoint : MonoBehaviour
@@ -50,6 +51,7 @@ public class FirstCheckPoint : MonoBehaviour
             }
             else
             {
+                SceneManager.LoadScene("LoseChances");
                 //game over (idk how to do gameover or kill the player yet)
 
                 //Application.Quit(); //Quits application if player does not have chances left. Can change to switch to Lobby/mainMenu scene if needed

@@ -16,9 +16,13 @@ public class Demo1Activator : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collider) {
         if(collider.tag == "Player"){
             Debug.Log("player triggered checkpoint");
-            //if(usingController), else if(usingKeyboard)
-            controllerImage1.gameObject.SetActive(true);
-            keyboardImage1.gameObject.SetActive(true);
+
+            if(InputManager.usingController){
+                controllerImage1.gameObject.SetActive(true);
+            }
+            else if(InputManager.usingKeyboard){
+                keyboardImage1.gameObject.SetActive(true);
+            }
         }
         
     }

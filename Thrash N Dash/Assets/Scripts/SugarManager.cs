@@ -36,7 +36,7 @@ public class SugarManager : MonoBehaviour
     void Update()
     { 
         //if the player takes the sugar by pressing the Q key, they lose health and gain speed
-        if((Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.JoystickButton3)) && !sugarRushActive /*&& rushTime>=1*/){
+        if((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.JoystickButton3)) && !sugarRushActive /*&& rushTime>=1*/){
             //Coroutine = allow to delay/modify methods and events until a time or condition is met
             StartCoroutine(SugarRush(rushTime));
         }

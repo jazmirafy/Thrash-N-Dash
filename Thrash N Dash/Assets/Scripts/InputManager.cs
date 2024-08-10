@@ -17,12 +17,11 @@ public class InputManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Return) ){
-            Debug.Log("Return key or X has been pressed.");
+        if(Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.A)){
             SceneManager.LoadScene("GO");
             usingKeyboard = true;
         }
-        else if(Input.GetKeyDown(KeyCode.JoystickButton2)){
+        else if(Input.GetKeyDown(KeyCode.JoystickButton0)){
             SceneManager.LoadScene("GO");
             usingController = true;
         }

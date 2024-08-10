@@ -5,7 +5,7 @@ using UnityEngine;
 public class playerController : MonoBehaviour
 {
     //movement variables
-    public float maxSpeed;
+    public static float maxSpeed = 8f;
     public Rigidbody2D myRB;
     public Animator myAnim;
     public SecondCheckPoint secondCheckPoint;

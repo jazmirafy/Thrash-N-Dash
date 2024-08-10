@@ -36,6 +36,8 @@ public class SecondCheckPoint : MonoBehaviour
             if (firstCheckPoint.accurateStop || sugarManager.sugarRushActive)
             {
                 isTricking = true;
+                //reset the current trick sliders size
+                sliderManager.StretchTop(firstCheckPoint.currentBackground, -totalIncrement);
                 // Deactivate slider at the second checkpoint
                 firstCheckPoint.trickSlider.gameObject.SetActive(false);
                 firstCheckPoint.sliderEnabled = false;
@@ -52,13 +54,12 @@ public class SecondCheckPoint : MonoBehaviour
                 isTricking = false;
                 EnemyChase.AIspeed += speedIncreaser; //increase the enemy speed after the player passes an obstacle
                 Debug.Log("AIspeed value: " + EnemyChase.AIspeed);
-
                 if (firstCheckPoint.accurateStop)
                 {
                     //give the incentive for doing the trick as expanding the target area
 
-                    sliderManager.upperBound = Mathf.Min((sliderManager.upperBound + (incrementAmount/2)), .85f); 
-                    sliderManager.lowerBound = Mathf.Max((sliderManager.lowerBound - (incrementAmount/2)), .20f);
+                    SliderManager.upperBound = Mathf.Min((SliderManager.upperBound + (incrementAmount/2)), .85f); 
+                    SliderManager.lowerBound = Mathf.Max((SliderManager.lowerBound - (incrementAmount/2)), .20f);
                     totalIncrement += incrementAmount;
                     sliderManager.StretchTop(nextSlider, totalIncrement);
                     
@@ -66,14 +67,14 @@ public class SecondCheckPoint : MonoBehaviour
                 if(sugarManager.sugarRushActive)
                 {
                     //give a penalty for taking sugar by decreasing the target area
-                    sliderManager.upperBound = Mathf.Max((sliderManager.upperBound - (incrementAmount/2)), .45f); 
-                    sliderManager.lowerBound = Mathf.Min((sliderManager.lowerBound + (incrementAmount/2)), .40f);
+                    SliderManager.upperBound = Mathf.Max((SliderManager.upperBound - (incrementAmount/2)), .45f); 
+                    SliderManager.lowerBound = Mathf.Min((SliderManager.lowerBound + (incrementAmount/2)), .40f);
                     totalIncrement -= incrementAmount;
                     sliderManager.StretchTop(nextSlider, totalIncrement);
                 }
 
                 // Refill the player's chances for the next obstacle
-                firstCheckPoint.chances = 2;
+                FirstCheckPoint.chances = 2;
                 firstCheckPoint.accurateStop = false;
             }
             else if (!firstCheckPoint.accurateStop || !firstCheckPoint.buttonPressed)
@@ -92,7 +93,7 @@ public class SecondCheckPoint : MonoBehaviour
                 // Subtract player's health here if needed
 
                 firstCheckPoint.buttonPressed = false; // Reset first checkpoint so slider starts moving again
-                firstCheckPoint.chances--; // Take away a chance
+                FirstCheckPoint.chances--; // Take away a chance
             }
 
         }   

@@ -7,14 +7,13 @@ public class TimeManager : MonoBehaviour
     public float slowDownFactor; //the lower this number is, the slower we will move
     public float slowDownLength = 2f; //how long the slow down will occur
     float incrementer;
-    float originalDeltaTime;
     float iterationLength = 1f;
 
     public void DoSlowDown()
     {
         //time scale determines the scale time is passing. a timescale value of 1 is real time.
         Time.timeScale = slowDownFactor; //set the time scale value to our slowdown factor value
-        incrementer = ((1- Time.timeScale)/ slowDownLength);
+        incrementer = (1- Time.timeScale)/ slowDownLength;
         //fixed delta time is the amount of time in between each fixed update frame. we change this so when we slow the game down it doesnt look choppy
         Time.fixedDeltaTime = Time.timeScale * 0.02f; 
         Debug.Log($"DoSlowDown called. Time.timeScale: {Time.timeScale}, Time.fixedDeltaTime: {Time.fixedDeltaTime}");

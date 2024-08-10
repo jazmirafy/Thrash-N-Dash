@@ -7,10 +7,10 @@ public class SugarManager : MonoBehaviour
 {
     public Image healthBar;
     public float maxHealth = 6;
-    public float healthAmount;
+    public static float healthAmount;
     public Image speedBar;
     //rushTime is how long the sugar rush lasts
-    public float rushTime = 5;
+    public static float rushTime = 5;
     public playerController playerController;
     //allows sugar rush cooldown
     public bool sugarRushActive;
@@ -20,6 +20,7 @@ public class SugarManager : MonoBehaviour
     public Image sugarImage;
     public Image controllerButton;
     public Image keyboardButton;
+    public TransitionManager transitionManager;
     
 
 
@@ -46,6 +47,7 @@ public class SugarManager : MonoBehaviour
     { 
 
         //if the player takes the sugar by pressing the Q key, they lose health and gain speed
+        //did they click w or Y
         if((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.JoystickButton3)) && !sugarRushActive /*&& rushTime>=1*/){
             //Coroutine = allow to delay/modify methods and events until a time or condition is met
             StartCoroutine(SugarRush(rushTime));
@@ -77,6 +79,7 @@ public class SugarManager : MonoBehaviour
         }
         //if the player runs out of health
         else{
+            TransitionManager.ResetVariables();
             SceneManager.LoadScene("LoseHealth");
             //game over (idk how to do gameover or kill the player yet)
         }

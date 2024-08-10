@@ -7,13 +7,12 @@ using UnityEngine.SceneManagement;
 
 public class FirstCheckPoint : MonoBehaviour
 {
-    public float chances = 2f;
+    public static float chances = 2f;
     public GameObject player;
     public GameObject enemy;
     public SliderManager sliderManager;
     public Vector2 checkPointPosition;
     public Slider trickSlider;
-    public Image backgroundImage;
     public bool buttonPressed = false;
     public float fillAmount;
     private float elapsedTime = 0f; // Time elapsed since the start of the cycle
@@ -22,6 +21,7 @@ public class FirstCheckPoint : MonoBehaviour
     public bool accurateStop; //bool to check that the slider was stopped within the correct range
     public bool clickedOllie = false;
     public bool clickedKickFlip = false;
+    public GameObject currentBackground;
 
 
     // OnEnable is called every time the game object is activated
@@ -51,6 +51,8 @@ public class FirstCheckPoint : MonoBehaviour
             }
             else
             {
+
+                TransitionManager.ResetVariables();
                 SceneManager.LoadScene("LoseChances");
                 //game over (idk how to do gameover or kill the player yet)
 
@@ -79,16 +81,6 @@ public class FirstCheckPoint : MonoBehaviour
             {
                 trickSlider.value = Mathf.Lerp(1f, 0f, t);
             }
-            //if the handle is over the target area make the slider turn green
-            /*if(trickSlider.value >= sliderManager.lowerBound &&  trickSlider.value <= sliderManager.upperBound)
-            {
-
-                backgroundImage.color = Color.green;
-            }
-            else
-            {
-                backgroundImage.color = Color.blue;
-            }*/
 
             if (t >= 1f)
             {
@@ -96,8 +88,8 @@ public class FirstCheckPoint : MonoBehaviour
                 increasing = !increasing;
             }
             //check to see if the user clicked a button that is assigned to a trick, and then stop the trick meter and changes the bool accordingly
-            CheckTrick(KeyCode.Q, KeyCode.JoystickButton1, ref clickedOllie);
-            CheckTrick(KeyCode.Z, KeyCode.JoystickButton2, ref clickedKickFlip);
+            CheckTrick(KeyCode.Q, KeyCode.JoystickButton0, ref clickedOllie); //did they click Q or A
+            CheckTrick(KeyCode.Z, KeyCode.JoystickButton1, ref clickedKickFlip); //did they click Z or B
         }
 
 
@@ -112,7 +104,7 @@ public class FirstCheckPoint : MonoBehaviour
             trickSlider.value = fillAmount;//stop the trick slider at the value it currently is when they pressed the button
 
             //determine if the user stopped accurately (within the "green area" bounds)
-            if (fillAmount >= sliderManager.lowerBound && fillAmount <= sliderManager.upperBound)
+            if (fillAmount >= SliderManager.lowerBound && fillAmount <= SliderManager.upperBound)
             {
                 accurateStop = true;
             }

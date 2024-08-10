@@ -19,9 +19,12 @@ public class Demo2Activator : MonoBehaviour
             //first, deactivate the first images
             demo1Activator.controllerImage1.gameObject.SetActive(false);
             demo1Activator.keyboardImage1.gameObject.SetActive(false);
-            //if(usingController), else if(usingKeyboard)
-            controllerImage2.gameObject.SetActive(true);
-            keyboardImage2.gameObject.SetActive(true);
+            if(InputManager.usingController){
+                controllerImage2.gameObject.SetActive(true);
+            }
+            else if(InputManager.usingKeyboard){
+                keyboardImage2.gameObject.SetActive(true);
+            }
         }
         
     }

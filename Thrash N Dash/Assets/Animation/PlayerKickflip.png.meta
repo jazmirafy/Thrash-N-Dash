@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 20ba03f89be4247bcb7a6d1400701401
+guid: d3f4527aba52d4fd48b0af0832edc34b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kickflip 1_0
+      name: PlayerKickflip_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4315bce8206884b819f2faed89dbcb4d
-      internalID: 812704747
+      spriteID: 5d32ed721931a4e0399c9a69ec30313a
+      internalID: -879820423
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kickflip 1_1
+      name: PlayerKickflip_1
       rect:
         serializedVersion: 2
         x: 96
@@ -132,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fba10730a8a34260af241c13c7bb93c
-      internalID: 1322758508
+      spriteID: f9a8e0f9f138846a59c2ccfa6c1911fb
+      internalID: 1293642163
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kickflip 1_2
+      name: PlayerKickflip_2
       rect:
         serializedVersion: 2
         x: 192
@@ -153,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76fc0c2dc1b8a48dd83688f744e90fc5
-      internalID: -626621254
+      spriteID: bef030b434f1c48abba7ac46e712b268
+      internalID: -417798619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kickflip 1_3
+      name: PlayerKickflip_3
       rect:
         serializedVersion: 2
         x: 288
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16a9e7e247d8c42bf9e19fd09b0379b2
-      internalID: 1982898219
+      spriteID: 5b57f0e57698a42bb91e31c1063d5ff3
+      internalID: -1822237087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kickflip 1_4
+      name: PlayerKickflip_4
       rect:
         serializedVersion: 2
         x: 384
@@ -195,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4da213601e81442093d9156ff23c85f
-      internalID: -2010630439
+      spriteID: 127165cedbbbb4d6bb04c07841dad644
+      internalID: 370114939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kickflip 1_5
+      name: PlayerKickflip_5
       rect:
         serializedVersion: 2
         x: 480
@@ -216,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d54f362286e5b48cb98ec52a45ba52e9
-      internalID: 2117648154
+      spriteID: 11f5100158ecb43b99e55f5e8076820a
+      internalID: 59015781
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kickflip 1_6
+      name: PlayerKickflip_6
       rect:
         serializedVersion: 2
         x: 576
@@ -237,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ed9aba9e49c948908fd14b597464f4f
-      internalID: 75265476
+      spriteID: 4b79164944fbc42d9b9e0f9f46e2b22b
+      internalID: 1316589665
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kickflip 1_7
+      name: PlayerKickflip_7
       rect:
         serializedVersion: 2
         x: 672
@@ -258,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a79d402d2e99412e873772595c3ff64
-      internalID: 1254934394
+      spriteID: 6688547c10f234bfc891ec7623e99205
+      internalID: -2097889775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kickflip 1_8
+      name: PlayerKickflip_8
       rect:
         serializedVersion: 2
         x: 768
@@ -279,14 +279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc9a06208213c458a870b460c650cc43
-      internalID: -1822086150
+      spriteID: cb78c7cf56967432ca9b7b02b5690f53
+      internalID: 24534398
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kickflip 1_9
+      name: PlayerKickflip_9
       rect:
         serializedVersion: 2
         x: 864
@@ -300,14 +300,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d43bad357decf492385779e1790a9cc1
-      internalID: -899182346
+      spriteID: 4a719f12897044cc091bf1c51483356f
+      internalID: 187317021
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kickflip 1_10
+      name: PlayerKickflip_10
       rect:
         serializedVersion: 2
         x: 960
@@ -321,14 +321,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ee6bf2516a0d4787a7ea4f95dc5bdb9
-      internalID: -851366286
+      spriteID: d91ad25ffc6aa435c905cc7fc3edf21d
+      internalID: -104788730
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kickflip 1_11
+      name: PlayerKickflip_11
       rect:
         serializedVersion: 2
         x: 1056
@@ -342,14 +342,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a28c7129a57f4c6d9a62dbd3bfea07d
-      internalID: -575066504
+      spriteID: 93d97cb5b244b4730b98d083f4408b7e
+      internalID: 1310288065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kickflip 1_12
+      name: PlayerKickflip_12
       rect:
         serializedVersion: 2
         x: 1152
@@ -363,14 +363,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb545f3986ef047eab98ef088466c552
-      internalID: -1205332587
+      spriteID: 03d060c3566284319a4c36bafcc7c957
+      internalID: 1929181975
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kickflip 1_13
+      name: PlayerKickflip_13
       rect:
         serializedVersion: 2
         x: 1248
@@ -384,14 +384,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2320ab8fba7a44ae88185cf16a9be11
-      internalID: -148014486
+      spriteID: 5a362323949464e86bcbdb9905ed92d0
+      internalID: 1376158070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kickflip 1_14
+      name: PlayerKickflip_14
       rect:
         serializedVersion: 2
         x: 1344
@@ -405,14 +405,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 158dc462a2a054c0a80f10c3b7f5c251
-      internalID: 149886390
+      spriteID: 0e42da647f59d43f8a34d5132f3420f9
+      internalID: 920100309
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kickflip 1_15
+      name: PlayerKickflip_15
       rect:
         serializedVersion: 2
         x: 1440
@@ -426,14 +426,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 398f108a64c054038a01a3d8e9f94a1f
-      internalID: -2101252913
+      spriteID: a2dba3717501b453184117c04413a284
+      internalID: 85641844
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kickflip 1_16
+      name: PlayerKickflip_16
       rect:
         serializedVersion: 2
         x: 1536
@@ -447,14 +447,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7577ee1b59124b40a90005c8e7971e8
-      internalID: 361913575
+      spriteID: 5b2860757426649c4b1aace7dda29728
+      internalID: -1783439457
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kickflip 1_17
+      name: PlayerKickflip_17
       rect:
         serializedVersion: 2
         x: 1632
@@ -468,14 +468,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2facf4995cc7e48358da63f59d3bda05
-      internalID: -1669205929
+      spriteID: 47f522bc8950848f9ab6750976214e98
+      internalID: -1901859514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kickflip 1_18
+      name: PlayerKickflip_18
       rect:
         serializedVersion: 2
         x: 1728
@@ -489,8 +489,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccff9c80a25234330b09d7ce442df9ac
-      internalID: 762860210
+      spriteID: 7ab55e02cf1824468860e6f769e9f4f4
+      internalID: -106421727
       vertices: []
       indices: 
       edges: []
@@ -506,25 +506,25 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Kickflip 1_0: 812704747
-      Kickflip 1_1: 1322758508
-      Kickflip 1_10: -851366286
-      Kickflip 1_11: -575066504
-      Kickflip 1_12: -1205332587
-      Kickflip 1_13: -148014486
-      Kickflip 1_14: 149886390
-      Kickflip 1_15: -2101252913
-      Kickflip 1_16: 361913575
-      Kickflip 1_17: -1669205929
-      Kickflip 1_18: 762860210
-      Kickflip 1_2: -626621254
-      Kickflip 1_3: 1982898219
-      Kickflip 1_4: -2010630439
-      Kickflip 1_5: 2117648154
-      Kickflip 1_6: 75265476
-      Kickflip 1_7: 1254934394
-      Kickflip 1_8: -1822086150
-      Kickflip 1_9: -899182346
+      PlayerKickflip_0: -879820423
+      PlayerKickflip_1: 1293642163
+      PlayerKickflip_10: -104788730
+      PlayerKickflip_11: 1310288065
+      PlayerKickflip_12: 1929181975
+      PlayerKickflip_13: 1376158070
+      PlayerKickflip_14: 920100309
+      PlayerKickflip_15: 85641844
+      PlayerKickflip_16: -1783439457
+      PlayerKickflip_17: -1901859514
+      PlayerKickflip_18: -106421727
+      PlayerKickflip_2: -417798619
+      PlayerKickflip_3: -1822237087
+      PlayerKickflip_4: 370114939
+      PlayerKickflip_5: 59015781
+      PlayerKickflip_6: 1316589665
+      PlayerKickflip_7: -2097889775
+      PlayerKickflip_8: 24534398
+      PlayerKickflip_9: 187317021
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

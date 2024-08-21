@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f5bb5590e125045e7be73b24e40a4d90
+guid: ac6ac624cc47b43b6a8e474fd56c6bd1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerSugarState_0
+      name: Bonk_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 316
-        height: 128
+        width: 160
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81333aa4aa5364b19aed2099f7f80f06
-      internalID: 9153560
+      spriteID: 26c1f301b20fd4103978284e308dcb3a
+      internalID: -912519115
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSugarState_1
+      name: Bonk_1
       rect:
         serializedVersion: 2
-        x: 316
+        x: 160
         y: 0
-        width: 316
-        height: 128
+        width: 160
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d41a5daead4564555b11e98d0331abff
-      internalID: 700967818
+      spriteID: 284f2c2dcea2a4b3e9941358a5a006d6
+      internalID: 961709754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSugarState_2
+      name: Bonk_2
       rect:
         serializedVersion: 2
-        x: 632
+        x: 320
         y: 0
-        width: 316
-        height: 128
+        width: 160
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af4334108f666431bbf267226483c3f6
-      internalID: -1957448733
+      spriteID: af4ef2b77110840159f021790dc96b21
+      internalID: -1319304908
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSugarState_3
+      name: Bonk_3
       rect:
         serializedVersion: 2
-        x: 948
+        x: 480
         y: 0
-        width: 316
-        height: 128
+        width: 160
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90e91f0ecceca4ef78e039e5e42a3618
-      internalID: -1440820428
+      spriteID: c51c1ee937b6a4adab85b57298e8d537
+      internalID: 1602777436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSugarState_4
+      name: Bonk_4
       rect:
         serializedVersion: 2
-        x: 1264
+        x: 640
         y: 0
-        width: 316
-        height: 128
+        width: 160
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,20 +195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 981867ba3f5d24cedbfcd6fe6ff8feea
-      internalID: 1820570017
+      spriteID: e6c11ec540589455c9bd81242b20b8f9
+      internalID: 1334547916
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSugarState_5
+      name: Bonk_5
       rect:
         serializedVersion: 2
-        x: 1580
+        x: 800
         y: 0
-        width: 316
-        height: 128
+        width: 160
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,20 +216,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf1324ca6986042228e3c2c35a294868
-      internalID: 1892309646
+      spriteID: ebdaa4a9cb0c74b29b02ce39673d79a0
+      internalID: -696367079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSugarState_6
+      name: Bonk_6
       rect:
         serializedVersion: 2
-        x: 1896
+        x: 960
         y: 0
-        width: 316
-        height: 128
+        width: 160
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,20 +237,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2cb28599d9c8417cbea3bd6540160a8
-      internalID: -1368037790
+      spriteID: 323cd0b54e6ee42049615dd7dc67ed7f
+      internalID: -1049116806
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSugarState_7
+      name: Bonk_7
       rect:
         serializedVersion: 2
-        x: 2212
+        x: 1120
         y: 0
-        width: 316
-        height: 128
+        width: 160
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,92 +258,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06db1c2f371da44e0aa4c22f90dba6d6
-      internalID: 1562680034
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerSugarState_8
-      rect:
-        serializedVersion: 2
-        x: 2528
-        y: 0
-        width: 316
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8700ff3ecaa3040808568a9223f08b5a
-      internalID: 768493414
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerSugarState_9
-      rect:
-        serializedVersion: 2
-        x: 2844
-        y: 0
-        width: 316
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2a301b84e1fbf4aefa1d131f94bb7e39
-      internalID: -482406154
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerSugarState_10
-      rect:
-        serializedVersion: 2
-        x: 3160
-        y: 0
-        width: 316
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d21b723852d44734a42360e2cbb1d3d
-      internalID: 1787911018
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerSugarState_11
-      rect:
-        serializedVersion: 2
-        x: 3476
-        y: 0
-        width: 316
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cb934f0257ec84237bc65cdfdb7eff14
-      internalID: -714290729
+      spriteID: 95d693498c5ea4593ab3628f26ab5463
+      internalID: -943208288
       vertices: []
       indices: 
       edges: []
@@ -359,18 +275,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PlayerSugarState_0: 9153560
-      PlayerSugarState_1: 700967818
-      PlayerSugarState_10: 1787911018
-      PlayerSugarState_11: -714290729
-      PlayerSugarState_2: -1957448733
-      PlayerSugarState_3: -1440820428
-      PlayerSugarState_4: 1820570017
-      PlayerSugarState_5: 1892309646
-      PlayerSugarState_6: -1368037790
-      PlayerSugarState_7: 1562680034
-      PlayerSugarState_8: 768493414
-      PlayerSugarState_9: -482406154
+      Bonk_0: -912519115
+      Bonk_1: 961709754
+      Bonk_2: -1319304908
+      Bonk_3: 1602777436
+      Bonk_4: 1334547916
+      Bonk_5: -696367079
+      Bonk_6: -1049116806
+      Bonk_7: -943208288
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

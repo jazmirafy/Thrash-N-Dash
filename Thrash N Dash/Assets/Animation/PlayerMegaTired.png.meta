@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f5bb5590e125045e7be73b24e40a4d90
+guid: f9025f2cc986349538d28d860ff4765c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerSugarState_0
+      name: PlayerMegaTired_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81333aa4aa5364b19aed2099f7f80f06
-      internalID: 9153560
+      spriteID: 2ddeeef9b271b4fa1a0c4688cb7d2f2d
+      internalID: -1252826112
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSugarState_1
+      name: PlayerMegaTired_1
       rect:
         serializedVersion: 2
         x: 316
@@ -132,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d41a5daead4564555b11e98d0331abff
-      internalID: 700967818
+      spriteID: f1d3506129b464644b2bf842cbafe9b5
+      internalID: 18699353
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSugarState_2
+      name: PlayerMegaTired_2
       rect:
         serializedVersion: 2
         x: 632
@@ -153,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af4334108f666431bbf267226483c3f6
-      internalID: -1957448733
+      spriteID: 4eba763d4985544c49299132b01bfac5
+      internalID: 1428940431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSugarState_3
+      name: PlayerMegaTired_3
       rect:
         serializedVersion: 2
         x: 948
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90e91f0ecceca4ef78e039e5e42a3618
-      internalID: -1440820428
+      spriteID: fa9d993f2d6bc4436abbae8ebca40b3b
+      internalID: -72182700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSugarState_4
+      name: PlayerMegaTired_4
       rect:
         serializedVersion: 2
         x: 1264
@@ -195,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 981867ba3f5d24cedbfcd6fe6ff8feea
-      internalID: 1820570017
+      spriteID: cf6335c7385e4469bad416bc49007cc3
+      internalID: -1613979492
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSugarState_5
+      name: PlayerMegaTired_5
       rect:
         serializedVersion: 2
         x: 1580
@@ -216,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf1324ca6986042228e3c2c35a294868
-      internalID: 1892309646
+      spriteID: b768279deae374408aee0b82c6fc5a3d
+      internalID: -1414106467
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSugarState_6
+      name: PlayerMegaTired_6
       rect:
         serializedVersion: 2
         x: 1896
@@ -237,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2cb28599d9c8417cbea3bd6540160a8
-      internalID: -1368037790
+      spriteID: 6e8dd6ec008f54c308a4310c5a8025fc
+      internalID: -49726213
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSugarState_7
+      name: PlayerMegaTired_7
       rect:
         serializedVersion: 2
         x: 2212
@@ -258,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06db1c2f371da44e0aa4c22f90dba6d6
-      internalID: 1562680034
+      spriteID: 4ba67579219a048a9919c9f64007170d
+      internalID: -69831041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSugarState_8
+      name: PlayerMegaTired_8
       rect:
         serializedVersion: 2
         x: 2528
@@ -279,14 +279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8700ff3ecaa3040808568a9223f08b5a
-      internalID: 768493414
+      spriteID: 7028cf400ae5b4178b3a855fed61422b
+      internalID: -879405307
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSugarState_9
+      name: PlayerMegaTired_9
       rect:
         serializedVersion: 2
         x: 2844
@@ -300,14 +300,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a301b84e1fbf4aefa1d131f94bb7e39
-      internalID: -482406154
+      spriteID: 812dbfbeec5c448549971f7de29df656
+      internalID: 1905385932
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSugarState_10
+      name: PlayerMegaTired_10
       rect:
         serializedVersion: 2
         x: 3160
@@ -321,14 +321,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d21b723852d44734a42360e2cbb1d3d
-      internalID: 1787911018
+      spriteID: 861d1a47692884281a79530310fa9a16
+      internalID: -1764650438
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSugarState_11
+      name: PlayerMegaTired_11
       rect:
         serializedVersion: 2
         x: 3476
@@ -342,8 +342,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb934f0257ec84237bc65cdfdb7eff14
-      internalID: -714290729
+      spriteID: 729137cc75dec41b2885d7a17e281207
+      internalID: 1564924993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMegaTired_12
+      rect:
+        serializedVersion: 2
+        x: 3792
+        y: 0
+        width: 316
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f6ddc23947043fa8cecdf67253fad6
+      internalID: -1206188761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMegaTired_13
+      rect:
+        serializedVersion: 2
+        x: 4108
+        y: 0
+        width: 316
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60de9fcd39bf3413ba585a1bcc1b8607
+      internalID: 1506230310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMegaTired_14
+      rect:
+        serializedVersion: 2
+        x: 4424
+        y: 0
+        width: 316
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15ac1b9e9b6243db97fc680f3f991af
+      internalID: 1833574052
       vertices: []
       indices: 
       edges: []
@@ -359,18 +422,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PlayerSugarState_0: 9153560
-      PlayerSugarState_1: 700967818
-      PlayerSugarState_10: 1787911018
-      PlayerSugarState_11: -714290729
-      PlayerSugarState_2: -1957448733
-      PlayerSugarState_3: -1440820428
-      PlayerSugarState_4: 1820570017
-      PlayerSugarState_5: 1892309646
-      PlayerSugarState_6: -1368037790
-      PlayerSugarState_7: 1562680034
-      PlayerSugarState_8: 768493414
-      PlayerSugarState_9: -482406154
+      PlayerMegaTired_0: -1252826112
+      PlayerMegaTired_1: 18699353
+      PlayerMegaTired_10: -1764650438
+      PlayerMegaTired_11: 1564924993
+      PlayerMegaTired_12: -1206188761
+      PlayerMegaTired_13: 1506230310
+      PlayerMegaTired_14: 1833574052
+      PlayerMegaTired_2: 1428940431
+      PlayerMegaTired_3: -72182700
+      PlayerMegaTired_4: -1613979492
+      PlayerMegaTired_5: -1414106467
+      PlayerMegaTired_6: -49726213
+      PlayerMegaTired_7: -69831041
+      PlayerMegaTired_8: -879405307
+      PlayerMegaTired_9: 1905385932
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

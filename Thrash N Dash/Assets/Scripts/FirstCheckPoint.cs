@@ -22,9 +22,14 @@ public class FirstCheckPoint : MonoBehaviour
     public bool clickedOllie = false;
     public bool clickedKickFlip = false;
     public GameObject currentBackground;
+    public Animator animator;
 
 
     // OnEnable is called every time the game object is activated
+    void Start()
+    {
+        animator  = player.GetComponent<Animator>();
+    }
     void OnEnable()
     {
         clickedOllie = false;
@@ -51,10 +56,8 @@ public class FirstCheckPoint : MonoBehaviour
             }
             else
             {
-
                 TransitionManager.ResetVariables();
                 SceneManager.LoadScene("LoseChances");
-                //game over (idk how to do gameover or kill the player yet)
 
                 //Application.Quit(); //Quits application if player does not have chances left. Can change to switch to Lobby/mainMenu scene if needed
             }

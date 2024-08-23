@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class SecondCheckPoint : MonoBehaviour
 {      
     public bool isTricking = false;
+    public static bool isFalling  = false;
     public FirstCheckPoint firstCheckPoint;
     public GameObject player;
     public GameObject enemy;
@@ -13,10 +14,10 @@ public class SecondCheckPoint : MonoBehaviour
     public SliderManager sliderManager;
     public TrickJudgerController trickJudgerController;
     public float jumpDistance = 2f;
-    public float incrementAmount;
+    float incrementAmount = 0.005f;
     public GameObject nextSlider;
     public static float totalIncrement = 0f;
-    float speedIncreaser = .05f;
+    float speedIncreaser = .005f;
     public Animator animator;
 
     void Start()
@@ -46,10 +47,13 @@ public class SecondCheckPoint : MonoBehaviour
                 if(firstCheckPoint.clickedOllie){
                 player.GetComponent<JumpController>().StartJump(new Vector2(this.transform.position.x + jumpDistance, this.transform.position.y), "doingOllie");
                 firstCheckPoint.clickedOllie = false;
+                StartCoroutine(ResetIsTricking());
+                
                 }
                 else if(firstCheckPoint.clickedKickFlip || sugarManager.sugarRushActive){
                 player.GetComponent<JumpController>().StartJump(new Vector2(this.transform.position.x + jumpDistance, this.transform.position.y), "doingKickflip");
                 firstCheckPoint.clickedKickFlip = false;
+                StartCoroutine(ResetIsTricking());
                 }
                 isTricking = false;
                 EnemyChase.AIspeed += speedIncreaser; //increase the enemy speed after the player passes an obstacle
@@ -81,21 +85,31 @@ public class SecondCheckPoint : MonoBehaviour
             {
                 //player stumble animation
                 StartCoroutine(trickJudgerController.ShowBadTrick());
-                // If the player didn't hit the "green" area of the meter or didn't press the button in time, respawn them at the first checkpoint
-                player.transform.position = firstCheckPoint.checkPointPosition;
-                Debug.Log("player should have respawned at activator checkpoint");
-
-                // Respawn the enemy a few feet behind the player
-                enemy.transform.position = new Vector2(firstCheckPoint.checkPointPosition.x - 3, firstCheckPoint.checkPointPosition.y);
-                Debug.Log("enemy should have respawned behind player");
-
-                // Take away health when they fail the trick
-                // Subtract player's health here if needed
-
+                StartCoroutine(FallAndSpawn());
                 firstCheckPoint.buttonPressed = false; // Reset first checkpoint so slider starts moving again
                 FirstCheckPoint.chances--; // Take away a chance
-            }
 
+
+            }
         }   
     }
+    IEnumerator FallAndSpawn()
+    {
+        isFalling = true;
+        animator.SetTrigger("playerFell"); //do the fall animation
+        yield return new WaitForSeconds(1); //wait one second and then repawn the player and enemy
+        isFalling = false;
+        // If the player didn't hit the "green" area of the meter or didn't press the button in time, respawn them at the first checkpoint
+        player.transform.position = new Vector2(firstCheckPoint.checkPointPosition.x - 3, firstCheckPoint.checkPointPosition.y);
+        Debug.Log("player should have respawned at activator checkpoint");
+
+        // Respawn the enemy a few feet behind the player
+        enemy.transform.position = new Vector2(firstCheckPoint.checkPointPosition.x - 10, firstCheckPoint.checkPointPosition.y);
+        Debug.Log("enemy should have respawned behind player");
+    }
+    IEnumerator ResetIsTricking(){
+        yield return new WaitForSeconds(1);
+        animator.SetBool("isTricking", false);
+    }
+
 }

@@ -22,6 +22,7 @@ public class JumpController : MonoBehaviour
     {
         //do trick animation
         animator.SetTrigger(animation);
+        animator.SetBool("isTricking", true);
         //do jump
         startPosition = transform.position;
         targetPosition = landingPos;

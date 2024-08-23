@@ -9,7 +9,7 @@ public class DifficultyIncreaser : MonoBehaviour
     // Start is called before the first frame update
     private void OnTriggerEnter2D(Collider2D collider) {
         if(collider.tag == "Player"){
-            sliderManager.sliderSpeed -= .1f; //increase the speed the slider moves (the lower the slider speed the faster the slider moves)
+            sliderManager.sliderSpeed -= .05f; //increase the speed the slider moves (the lower the slider speed the faster the slider moves)
         }
     }
 }

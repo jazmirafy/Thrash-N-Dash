@@ -37,7 +37,7 @@ public class playerController : MonoBehaviour
         //checks if the circle on the players feet is overlapping another collider (the platform collider), if its overlapping, that means the player is on the floor
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckerRadius, groundLayer);
         //if the user is grounded, and the user press the jump button, make them jump the dedicated jump height
-        if(grounded && !secondCheckPoint.isTricking && Input.GetAxis("Jump")>0){
+        if(grounded && !secondCheckPoint.isTricking && !SecondCheckPoint.isFalling && Input.GetAxis("Jump")>0){
             myAnim.SetBool("isGrounded", grounded);
             myRB.AddForce(Vector2.up * jumpHeight); //this way of making the player jump can be more memory and performance efficient because it doesnt have to create a new vector 2 instance for each jump
             //myRB.AddForce(new Vector2(0, jumpHeight));

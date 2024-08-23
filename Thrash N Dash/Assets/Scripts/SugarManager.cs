@@ -21,7 +21,7 @@ public class SugarManager : MonoBehaviour
     public Image controllerButton;
     public Image keyboardButton;
     public TransitionManager transitionManager;
-    
+    public Animator myAnim;
 
 
     // Start is called before the first frame update
@@ -52,6 +52,16 @@ public class SugarManager : MonoBehaviour
             //Coroutine = allow to delay/modify methods and events until a time or condition is met
             StartCoroutine(SugarRush(rushTime));
         }
+        //if their health is not full, but greater than half, do the player tired animation
+        if(healthAmount < 6 && healthAmount > 3)
+        {
+            myAnim.SetBool("isTired", true);
+        }
+        //if their health is at half or less (but they arent dead) do the mega tired animation
+        if(healthAmount <= 3 && healthAmount > 0)
+        {
+            myAnim.SetBool("isMegaTired", true);
+        }
 
 
     }
@@ -63,11 +73,16 @@ public class SugarManager : MonoBehaviour
         sugarImage.color = Color.magenta;
         if(healthAmount >0){
             sugarRushActive = true;
+            //if the sugar rush is active, set the sugar rush animation bool to true and make the tired states false
+            myAnim.SetBool("isSugarRushing", true);
+            myAnim.SetBool("isTired", false);
+            myAnim.SetBool("isMegaTired", false);
             playerController.maxSpeed *= 2;
             //double the speed bar's size since the player's speed doubled
             speedBar.fillAmount *= 2;
             //yield return tells the code to do the above until condition is met (waitforseconds is the condtion) always put new before the condition
             yield return new WaitForSeconds(currentRushTime);
+            myAnim.SetBool("isSugarRushing", false);
             sugarImage.color = Color.white;
             //each time the player has a sugar rush, the next rush is gonna be 1 second slower to represent gaining tolerance to an addictive substance
             //rushTime is the duration of the sugar rush. the sugar rush duration goes down each time you take another sugar

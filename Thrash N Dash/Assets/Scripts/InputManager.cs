@@ -18,11 +18,11 @@ public class InputManager : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.A)){
-            SceneManager.LoadScene("GO");
+            SceneManager.LoadScene("Cutscene");
             usingKeyboard = true;
         }
         else if(Input.GetKeyDown(KeyCode.JoystickButton0)){
-            SceneManager.LoadScene("GO");
+            SceneManager.LoadScene("Cutscene");
             usingController = true;
         }
     }

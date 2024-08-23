@@ -26,6 +26,7 @@ public class TrickJudgerController : MonoBehaviour
     public IEnumerator ShowBadTrick()
     {
         badTrick.gameObject.SetActive(true); // enables the trick image for the alloted time
+        
         yield return new WaitForSeconds(popUpLength);
         badTrick.gameObject.SetActive(false); //disables the image after the alloted time
     }

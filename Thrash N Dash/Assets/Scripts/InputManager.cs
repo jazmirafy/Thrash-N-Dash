@@ -21,7 +21,7 @@ public class InputManager : MonoBehaviour
             SceneManager.LoadScene("Cutscene");
             usingKeyboard = true;
         }
-        else if(Input.GetKeyDown(KeyCode.JoystickButton0)){
+        else if(Input.GetKeyDown(KeyCode.JoystickButton0) || Input.GetKeyDown(KeyCode.JoystickButton1) || Input.GetKeyDown(KeyCode.JoystickButton2) || Input.GetKeyDown(KeyCode.JoystickButton3)){
             SceneManager.LoadScene("Cutscene");
             usingController = true;
         }

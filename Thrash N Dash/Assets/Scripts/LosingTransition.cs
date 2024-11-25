@@ -8,6 +8,12 @@ public class LosingTransition : MonoBehaviour
    public Animator animator;
    public TransitionManager transitionManager;
 
+    void Start()
+    {
+    //this is here just incase when the player loses they are still in the demo portion of the game (which is in slow motion and we dont want the bonk animation to be in slow motion also)
+     Time.timeScale = 1; //1 is real time
+
+    }
     void Update()
     {
         loadScene();

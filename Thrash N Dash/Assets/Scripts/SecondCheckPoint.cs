@@ -96,6 +96,7 @@ public class SecondCheckPoint : MonoBehaviour
     IEnumerator FallAndSpawn()
     {
         //disable the players collider here
+        player.gameObject.tag = "Untagged"; //make it to where the player cant trigger the checkpoint when he does the fall animation
         //actually the players collider isnt the trigger, the checkpoints are the trigger so i have to disable those triggers ( bring this up to mondae to think of how to go about doing this)
         isFalling = true;
         animator.SetTrigger("playerFell"); //do the fall animation
@@ -109,6 +110,7 @@ public class SecondCheckPoint : MonoBehaviour
         enemy.transform.position = new Vector2(firstCheckPoint.checkPointPosition.x - 10, firstCheckPoint.checkPointPosition.y);
         Debug.Log("enemy should have respawned behind player");
         //enable the players collider again here
+        player.gameObject.tag = "Player"; //allow the player to trigger the checkpoint after the animation
     }
     IEnumerator ResetIsTricking(){
         yield return new WaitForSeconds(1);

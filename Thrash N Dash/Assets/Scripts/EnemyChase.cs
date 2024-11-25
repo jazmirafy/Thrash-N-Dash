@@ -54,8 +54,8 @@ public class EnemyChase : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collider){
         if(collider.tag == "Player"){
-            TransitionManager.ResetVariables();
-            SceneManager.LoadScene("LoseChances");
+            //TransitionManager.ResetVariables();
+            SceneManager.LoadScene("BonkCutscene");
         }
     }
 }

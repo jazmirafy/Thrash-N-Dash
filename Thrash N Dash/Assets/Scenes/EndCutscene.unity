@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 407057673}
   - component: {fileID: 407057672}
   - component: {fileID: 407057674}
+  - component: {fileID: 407057675}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -220,6 +221,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &407057675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407057670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccf65c6793636b543898789fc7d6c061, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 407057674}
 --- !u!1 &769436322
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,7 +455,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 407057671}
-  m_Father: {fileID: 1820073536}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -576,8 +590,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1515609278}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
@@ -586,3 +599,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 769436325}
   - {fileID: 1820073536}
+  - {fileID: 1515609278}

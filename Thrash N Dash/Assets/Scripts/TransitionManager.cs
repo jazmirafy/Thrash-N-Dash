@@ -20,6 +20,7 @@ public class TransitionManager : MonoBehaviour
         EnemyChase.AIspeed = 8f;
         playerController.maxSpeed = 8f;
         SugarManager.rushTime = 5f;
+        Time.timeScale = 1; //1 is real time
 
 
     }

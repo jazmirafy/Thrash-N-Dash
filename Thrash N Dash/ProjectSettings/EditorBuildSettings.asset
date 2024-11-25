@@ -18,6 +18,12 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/BonkCutscene.unity
+    guid: 6aa74788d26314530a5d95fb154b60c1
+  - enabled: 1
+    path: Assets/Scenes/EndCutscene.unity
+    guid: b796729731d0e4dd9ae7fc94b7fe077c
+  - enabled: 1
     path: Assets/Scenes/LoseChances.unity
     guid: 3d0e2b9117e5340baaa8dd2424301a2a
   - enabled: 1

@@ -56,8 +56,8 @@ public class FirstCheckPoint : MonoBehaviour
             }
             else
             {
-                TransitionManager.ResetVariables();
-                SceneManager.LoadScene("LoseChances");
+                //TransitionManager.ResetVariables();
+                SceneManager.LoadScene("BonkCutscene");
 
                 //Application.Quit(); //Quits application if player does not have chances left. Can change to switch to Lobby/mainMenu scene if needed
             }

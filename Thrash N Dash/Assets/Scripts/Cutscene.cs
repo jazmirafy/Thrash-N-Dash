@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 public class Cutscene : MonoBehaviour
 {
     public Animator animator;
+
+    void Start(){
+        Time.timeScale = 1;
+    }
     void Update()
     {
         loadScene();

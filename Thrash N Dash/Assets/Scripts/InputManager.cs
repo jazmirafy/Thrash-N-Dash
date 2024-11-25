@@ -20,10 +20,12 @@ public class InputManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.A)){
             SceneManager.LoadScene("Cutscene");
             usingKeyboard = true;
+            usingController = false;
         }
         else if(Input.GetKeyDown(KeyCode.JoystickButton0) || Input.GetKeyDown(KeyCode.JoystickButton1) || Input.GetKeyDown(KeyCode.JoystickButton2) || Input.GetKeyDown(KeyCode.JoystickButton3)){
             SceneManager.LoadScene("Cutscene");
             usingController = true;
+            usingKeyboard = false;
         }
     }
 }
